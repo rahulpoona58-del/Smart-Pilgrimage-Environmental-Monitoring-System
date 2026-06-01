@@ -1,0 +1,34 @@
+# Edge Node Configuration Profile
+edge_node_id: "EDGE-GK-001"
+location_id: 1 # GAURIKUND BASE CAMP
+
+# Central Cloud API Settings
+cloud:
+  api_base_url: "http://spems-backend-api.local:8000/api/v1"
+  auth_token: "edge-secret-auth-token-123"
+  retry_buffer_limit: 1000 # Max offline cached records before dropping old events
+
+# Camera Stream Configuration
+cameras:
+  - id: "CAM-GK-ENTRY"
+    url: "rtsp://mock-video-stream:8554/gk-entry"
+    roi_polygon: [[100, 100], [1820, 100], [1820, 980], [100, 980]] # Normal tracking screen boundaries
+    restricted_zones:
+      - id: "ZONE-A-NO-PARK"
+        polygon: [[200, 400], [800, 400], [800, 800], [200, 800]] # Restricted parking geofence polygon coordinates
+    anpr_enabled: true
+    litter_enabled: false
+
+  - id: "CAM-GK-LITTER"
+    url: "rtsp://mock-video-stream:8554/gk-litter"
+    roi_polygon: [[50, 50], [1900, 50], [1900, 1000], [50, 1000]]
+    restricted_zones: []
+    anpr_enabled: false
+    litter_enabled: true
+
+# Local Inference Parameters
+inference:
+  yolo_model_path: "models/yolov8n.pt"
+  confidence_threshold: 0.35
+  iou_threshold: 0.45
+  frame_skip: 2 # Only infer every N-th frame to conserve edge GPU capacity

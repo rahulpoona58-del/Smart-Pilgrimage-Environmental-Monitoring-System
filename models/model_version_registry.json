@@ -1,0 +1,7 @@
+{
+    "model_version": "SPEMS-YOLO-v1.1.2-Finetuned",
+    "retrained_at": "2026-06-01T16:28:15.938224Z",
+    "trigger": "Model Confidence Degradation",
+    "final_val_precision_mAP": 0.87,
+    "samples_trained": 12
+}

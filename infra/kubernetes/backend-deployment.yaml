@@ -1,0 +1,95 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spems-backend
+  namespace: spems-production
+  labels:
+    app: spems-backend
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: spems-backend
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  template:
+    metadata:
+      labels:
+        app: spems-backend
+    spec:
+      containers:
+      - name: backend-api
+        image: spems-registry.internal/spems-backend:v1.0.0
+        imagePullPolicy: IfNotPresent
+        resources:
+          limits:
+            cpu: "2"
+            memory: 2Gi
+          requests:
+            cpu: "500m"
+            memory: 512Mi
+        ports:
+        - containerPort: 8000
+          name: http-api
+        env:
+        - name: DATABASE_URL
+          valueFrom:
+            secretKeyRef:
+              name: db-credentials
+              key: connection-string
+        - name: SPEMS_DRONE_AUTH_TOKEN
+          valueFrom:
+            secretKeyRef:
+              name: api-secrets
+              key: drone-token
+        - name: REDIS_URL
+          value: "redis://spems-redis-service:6379/0"
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 8000
+          initialDelaySeconds: 10
+          periodSeconds: 5
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 8000
+          initialDelaySeconds: 15
+          periodSeconds: 10
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: spems-backend-service
+  namespace: spems-production
+spec:
+  selector:
+    app: spems-backend
+  ports:
+  - protocol: TCP
+    port: 8000
+    targetPort: 8000
+  type: ClusterIP
+---
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: spems-backend-hpa
+  namespace: spems-production
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: spems-backend
+  minReplicas: 3
+  maxReplicas: 10
+  metrics:
+  - type: Resource
+    resource:
+      name: cpu
+      target:
+        type: Utilization
+        averageUtilization: 75

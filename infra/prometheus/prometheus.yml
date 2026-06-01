@@ -1,0 +1,29 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+rule_files:
+  - "alert_rules.yml"
+
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+            - "alertmanager:9093"
+
+scrape_configs:
+  # 1. Scraping Kubernetes Cluster node vital metrics
+  - job_name: "kubernetes-apiservers"
+    kubernetes_sd_configs:
+      - role: apiserver
+
+  # 2. Scraping FastAPI backend metrics endpoint
+  - job_name: "spems-backend-api"
+    static_configs:
+      - targets: ["spems-backend-service.spems-production.svc.cluster.local:8000"]
+    metrics_path: "/metrics"
+
+  # 3. Scraping Edge AI health node statuses (Active scrape of connected gateways)
+  - job_name: "spems-edge-nodes"
+    static_configs:
+      - targets: ["10.240.12.10:9100", "10.240.12.11:9100", "10.240.12.12:9100"] # Mock VPN IPs of Gaurikund, Badrinath, Gangotri gateways

@@ -1,0 +1,58 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: spems-postgres
+  namespace: spems-production
+  labels:
+    app: spems-postgres
+spec:
+  serviceName: spems-postgres-headless
+  replicas: 1
+  selector:
+    matchLabels:
+      app: spems-postgres
+  template:
+    metadata:
+      labels:
+        app: spems-postgres
+    spec:
+      containers:
+      - name: postgis
+        image: postgis/postgis:15-3.3
+        ports:
+        - containerPort: 5432
+          name: postgres
+        env:
+        - name: POSTGRES_DB
+          value: smart_pilgrimage_db
+        - name: POSTGRES_USER
+          value: admin
+        - name: POSTGRES_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: db-credentials
+              key: admin-password
+        volumeMounts:
+        - name: pgdata
+          mountPath: /var/lib/postgresql/data
+  volumeClaimTemplates:
+  - metadata:
+      name: pgdata
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      resources:
+        requests:
+          storage: 100Gi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: spems-postgres-service
+  namespace: spems-production
+spec:
+  selector:
+    app: spems-postgres
+  ports:
+  - port: 5432
+    targetPort: 5432
+  type: ClusterIP

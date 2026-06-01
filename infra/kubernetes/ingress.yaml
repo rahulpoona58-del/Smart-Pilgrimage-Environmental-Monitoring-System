@@ -1,0 +1,37 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: spems-ingress
+  namespace: spems-production
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    nginx.ingress.kubernetes.io/proxy-body-size: "10m" # Support larger evidence uploads
+spec:
+  tls:
+  - hosts:
+    - spems-api.uttarakhand.gov.in
+    - spems-dashboard.uttarakhand.gov.in
+    secretName: spems-tls-certs
+  rules:
+  - host: spems-api.uttarakhand.gov.in
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: spems-backend-service
+            port:
+              number: 8000
+  - host: spems-dashboard.uttarakhand.gov.in
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: spems-frontend-service
+            port:
+              number: 3000
