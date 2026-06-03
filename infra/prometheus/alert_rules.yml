@@ -1,0 +1,32 @@
+groups:
+  - name: spems_alert_rules
+    rules:
+      # 1. Alert if an Edge Node goes completely offline
+      - alert: EdgeNodeOffline
+        expr: up{job="spems-edge-nodes"} == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Edge Node {{ $labels.instance }} Offline"
+          description: "SPEMS Edge Node has been unreachable for more than 1 minute. CCTV stream analysis is currently halted."
+
+      # 2. Alert if Jetson core temperature exceeds critical bounds (risk of thermal lockup)
+      - alert: HighJetsonTemperature
+        expr: jetson_core_temperature > 75
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High temperature on Edge Node {{ $labels.node }}"
+          description: "Thermal zone {{ $labels.zone }} temperature has exceeded 75°C (Current value: {{ $value }}°C). Thermal throttling is imminent."
+
+      # 3. Alert if the offline SQLite failsafe queue fills up (indicating network synchronization issues)
+      - alert: FailsafeBufferOverflow
+        expr: jetson_failsafe_buffer_records > 800
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Failsafe Buffer Overflow Imminent on {{ $labels.node }}"
+          description: "Offline SQLite cache has exceeded 800 pending records (Current size: {{ $value }}). Check WAN satellite link synchronization loops."

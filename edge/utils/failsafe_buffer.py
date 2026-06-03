@@ -1,6 +1,9 @@
 import sqlite3
 import json
 import os
+import logging
+
+logger = logging.getLogger("spems.edge.buffer")
 
 class FailsafeBuffer:
     """
@@ -61,9 +64,9 @@ class FailsafeBuffer:
                     VALUES (?, ?, ?, ?, ?, ?)
                 """, (plate, camera_id, location_id, log_type, timestamp, confidence))
                 conn.commit()
-            print(f"[Buffer Cache] Cached offline vehicle log: {plate}")
+            logger.info(f"[Buffer Cache] Cached offline vehicle log: {plate}")
         except Exception as e:
-            print(f"[Buffer Error] Failed to write offline vehicle log: {e}")
+            logger.error(f"[Buffer Error] Failed to write offline vehicle log: {e}")
 
     def buffer_violation(self, location_id: int, camera_id: str, plate: str, v_type: str, severity: str, img_path: str, coords: tuple, timestamp: str):
         """Pushes an environmental infraction event into the SQLite buffer table."""
@@ -76,9 +79,9 @@ class FailsafeBuffer:
                     VALUES (?, ?, ?, ?, ?, ?, ?, ?)
                 """, (location_id, camera_id, plate, v_type, severity, img_path, coords_json, timestamp))
                 conn.commit()
-            print(f"[Buffer Cache] Cached offline violation: {v_type} for {plate if plate else 'Pedestrian'}")
+            logger.info(f"[Buffer Cache] Cached offline violation: {v_type} for {plate if plate else 'Pedestrian'}")
         except Exception as e:
-            print(f"[Buffer Error] Failed to cache offline violation event: {e}")
+            logger.error(f"[Buffer Error] Failed to cache offline violation event: {e}")
 
     def fetch_all_buffered_logs(self) -> list:
         """Fetches all items currently cached in the vehicle logs table."""
@@ -89,7 +92,7 @@ class FailsafeBuffer:
                 cursor.execute("SELECT * FROM vehicle_logs ORDER BY id ASC")
                 return [dict(row) for row in cursor.fetchall()]
         except Exception as e:
-            print(f"[Buffer Error] Failed to query buffered logs: {e}")
+            logger.error(f"[Buffer Error] Failed to query buffered logs: {e}")
             return []
 
     def fetch_all_buffered_violations(self) -> list:
@@ -101,7 +104,7 @@ class FailsafeBuffer:
                 cursor.execute("SELECT * FROM violations ORDER BY id ASC")
                 return [dict(row) for row in cursor.fetchall()]
         except Exception as e:
-            print(f"[Buffer Error] Failed to query buffered violations: {e}")
+            logger.error(f"[Buffer Error] Failed to query buffered violations: {e}")
             return []
 
     def remove_buffered_logs(self, record_ids: list):
@@ -115,7 +118,7 @@ class FailsafeBuffer:
                 cursor.execute(f"DELETE FROM vehicle_logs WHERE id IN ({placeholders})", record_ids)
                 conn.commit()
         except Exception as e:
-            print(f"[Buffer Error] Failed to purge vehicle logs from buffer: {e}")
+            logger.error(f"[Buffer Error] Failed to purge vehicle logs from buffer: {e}")
 
     def remove_buffered_violations(self, record_ids: list):
         """Prunes uploaded records from the violations cache."""
@@ -128,4 +131,4 @@ class FailsafeBuffer:
                 cursor.execute(f"DELETE FROM violations WHERE id IN ({placeholders})", record_ids)
                 conn.commit()
         except Exception as e:
-            print(f"[Buffer Error] Failed to purge violations from buffer: {e}")
+            logger.error(f"[Buffer Error] Failed to purge violations from buffer: {e}")

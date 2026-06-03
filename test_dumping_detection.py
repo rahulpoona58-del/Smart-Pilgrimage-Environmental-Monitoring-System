@@ -6,7 +6,12 @@ import numpy as np
 import time
 import os
 import requests
-from datetime import datetime
+import sys
+from datetime import datetime, timezone
+
+# Prevent Unicode encoding issues in Windows command prompt
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
 
 # Import modular dumping detector class
 from edge.cv_pipelines.dumping_detector import DumpingDetector
@@ -48,7 +53,7 @@ class DumpingOrchestrator:
         print(f"\n[Dumping Infraction Flagged] Generating Legal Evidence for: {violation['violation_type']}...")
         
         # 1. Create a timestamped evidence filename
-        timestamp_str = datetime.utcnow().isoformat() + "Z"
+        timestamp_str = datetime.now(timezone.utc).isoformat() + "Z"
         filename = f"dumping_incident_{int(time.time())}_{violation['violation_type'].lower()}.jpg"
         evidence_dir = "data/evidence"
         os.makedirs(evidence_dir, exist_ok=True)

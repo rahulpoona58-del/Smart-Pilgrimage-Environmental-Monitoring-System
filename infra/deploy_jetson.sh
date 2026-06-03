@@ -46,8 +46,10 @@ pip install numpy opencv-python-headless pyyaml requests ultralytics
 # 4. Create failsafe buffer structures
 echo "[Step 4] Configuring offline database cache..."
 mkdir -p "${WORKDIR}/database"
+mkdir -p "${WORKDIR}/buffer"
+mkdir -p "${WORKDIR}/logs"
 mkdir -p "${WORKDIR}/evidence/violations"
-sqlite3 "${WORKDIR}/database/buffer.db" "VACUUM;"
+sqlite3 "${WORKDIR}/buffer/edge_buffer.db" "VACUUM;"
 
 # 5. Create Systemd Service File
 echo "[Step 5] Creating SPEMS Supervisor systemd daemon..."
@@ -61,6 +63,7 @@ Type=simple
 User=${USER}
 WorkingDirectory=${WORKDIR}
 Environment="PYTHONUNBUFFERED=1"
+Environment="PYTHONUTF8=1"
 ExecStart=${WORKDIR}/venv/bin/python ${WORKDIR}/main_edge.py --config ${WORKDIR}/config.yaml
 Restart=always
 RestartSec=10

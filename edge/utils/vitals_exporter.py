@@ -17,7 +17,9 @@ class MetricsHandler(http.server.BaseHTTPRequestHandler):
 
     def get_failsafe_buffer_count(self) -> int:
         """Retrieves count of cached offline entries in the local SQLite buffer."""
-        db_path = "database/buffer.db"
+        db_path = "buffer/edge_buffer.db"
+        if not os.path.exists(db_path):
+            db_path = "database/buffer.db"
         if not os.path.exists(db_path):
             return 0
         try:

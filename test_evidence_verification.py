@@ -4,7 +4,12 @@
 import requests
 import os
 import time
-from datetime import datetime
+import sys
+from datetime import datetime, timezone
+
+# Prevent Unicode encoding issues in Windows command prompt
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
 
 API_BASE_URL = "http://localhost:8000/api/v1"
 
@@ -37,7 +42,7 @@ def run_evidence_verification_audit():
         "plate_number": "UK07TA8888",
         "violation_type": "Littering",
         "severity_level": "Medium",
-        "violation_timestamp": datetime.utcnow().isoformat() + "Z",
+        "violation_timestamp": datetime.now(timezone.utc).isoformat() + "Z",
         "latitude": "30.6508",
         "longitude": "79.0058"
     }

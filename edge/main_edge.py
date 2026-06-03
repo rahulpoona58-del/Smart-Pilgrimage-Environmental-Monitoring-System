@@ -5,6 +5,7 @@ import time
 import requests
 import threading
 import numpy as np
+import logging
 from datetime import datetime, timezone
 
 from cv_pipelines.vehicle_tracker import VehicleTracker
@@ -13,6 +14,11 @@ from cv_pipelines.zone_monitor import ZoneMonitor
 from cv_pipelines.dumping_detector import DumpingDetector
 from utils.failsafe_buffer import FailsafeBuffer
 from utils.camera_ingest import MultiCameraIngestManager
+from utils.logging_config import setup_edge_logging
+
+# Configure logging for Edge node
+setup_edge_logging()
+logger = logging.getLogger("spems.edge.supervisor")
 
 class EdgeSupervisor:
     """
@@ -121,7 +127,7 @@ class EdgeSupervisor:
             if response.status_code == 201:
                 return True
         except requests.RequestException as e:
-            print(f"[Upload Error] Connection failed: {e}")
+            logger.error(f"[Upload Error] Connection failed: {e}")
 
         # If network call fails, save to SQLite buffer
         self.buffer.buffer_violation(self.location_id, camera_id, plate, v_type, severity, img_path, coords, timestamp_str)
@@ -129,13 +135,13 @@ class EdgeSupervisor:
 
     def buffer_synchronization_loop(self):
         """Background thread that continuously checks network state and synchronizes buffered local SQLite queues."""
-        print("[Buffer Sync] Initializing offline storage synchronization scheduler...")
+        logger.info("[Buffer Sync] Initializing offline storage synchronization scheduler...")
         while not self.shutdown_flag.is_set():
             if self.check_network_connectivity():
                 # 1. Sync vehicle transit logs
                 logs = self.buffer.fetch_all_buffered_logs()
                 if logs:
-                    print(f"[Buffer Sync] Connecting online: uploading {len(logs)} buffered vehicle logs...")
+                    logger.info(f"[Buffer Sync] Connecting online: uploading {len(logs)} buffered vehicle logs...")
                     successful_ids = []
                     for log in logs:
                         # Attempt to post log
@@ -157,12 +163,12 @@ class EdgeSupervisor:
                     
                     if successful_ids:
                         self.buffer.remove_buffered_logs(successful_ids)
-                        print(f"[Buffer Sync] Purged {len(successful_ids)} uploaded records from local database.")
+                        logger.info(f"[Buffer Sync] Purged {len(successful_ids)} uploaded records from local database.")
 
                 # 2. Sync violation events
                 violations = self.buffer.fetch_all_buffered_violations()
                 if violations:
-                    print(f"[Buffer Sync] Inbound connection active: uploading {len(violations)} cached violations...")
+                    logger.info(f"[Buffer Sync] Inbound connection active: uploading {len(violations)} cached violations...")
                     successful_ids = []
                     for v in violations:
                         try:
@@ -197,7 +203,7 @@ class EdgeSupervisor:
                     
                     if successful_ids:
                         self.buffer.remove_buffered_violations(successful_ids)
-                        print(f"[Buffer Sync] Synchronized {len(successful_ids)} violations, local cache refreshed.")
+                        logger.info(f"[Buffer Sync] Synchronized {len(successful_ids)} violations, local cache refreshed.")
             
             # Wait 10 seconds between offline synchronization sweeps
             self.shutdown_flag.wait(10.0)
@@ -218,7 +224,7 @@ class EdgeSupervisor:
         lat = cam_config.get("latitude", 30.6500)
         lng = cam_config.get("longitude", 79.0050)
 
-        print(f"[Stream Worker] Starting processing thread for: {camera_id} via RTSP {stream_url}")
+        logger.info(f"[Stream Worker] Starting processing thread for: {camera_id} via RTSP {stream_url}")
         
         # Ingest manager tracks and connects streams; we fetch frames asynchronously
         frame_counter = 0
@@ -269,7 +275,7 @@ class EdgeSupervisor:
                             avg_conf = conf_sum / conf_count
                             
                             self.active_tracks[track_id] = best_plate
-                            print(f"[ANPR Consensus Trigger] Found License Plate: {best_plate} (Avg Conf: {avg_conf:.2f}, Samples: {len(history)}) on track {track_id}")
+                            logger.info(f"[ANPR Consensus Trigger] Found License Plate: {best_plate} (Avg Conf: {avg_conf:.2f}, Samples: {len(history)}) on track {track_id}")
                             
                             # Upload log (Assumed entry direction at gate)
                             threading.Thread(
@@ -370,14 +376,14 @@ class EdgeSupervisor:
             t.start()
             camera_threads.append(t)
 
-        print(f"[Supervisor] Edge Processing node initialized. Running {len(camera_threads)} active camera pipelines.")
+        logger.info(f"[Supervisor] Edge Processing node initialized. Running {len(camera_threads)} active camera pipelines.")
         
         # Keep main thread alive
         try:
             while True:
                 time.sleep(1.0)
         except KeyboardInterrupt:
-            print("[Supervisor] Received shutdown command. Stopping camera threads...")
+            logger.info("[Supervisor] Received shutdown command. Stopping camera threads...")
             self.shutdown_flag.set()
             self.ingest_manager.stop_all_streams()
             sync_thread.join(timeout=2.0)
