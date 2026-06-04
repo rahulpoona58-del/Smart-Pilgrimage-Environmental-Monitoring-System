@@ -96,3 +96,16 @@ python test_integrated_pipeline.py
 - **Telemetry Charts**: Plots hourly timelines for AQI/dust, CO2 standards, ambient air temperature, and river pH records.
 - **Violation Auditing**: Supports cryptographic SHA-256 seal verification and e-challan ASCII report downloads directly from database logs.
 
+---
+
+## 5. Emissions Calculator & Offset Recommendations
+
+- **Vehicular Carbon Footprint**: Computes CO2 output and fine particulate matter (PM) segment-by-segment on the Sonprayag-Gaurikund corridor.
+- **Reforestation Targets**: Analyzes transit count and vehicle fuel classes to calculate the exact number of Deodar and Himalayan Oak trees required to neutralize the carbon footprint.
+- **Financial Allocation**: Automatically recommends environmental mitigation budgets (at INR 150 per sapling for planting and care).
+- **Calculation History**: Retains calculation histories in the `emissions_history` database table for audit trails.
+- **FastAPI Endpoints**:
+  - `GET /api/v1/compliance/emissions/calculate`: Computes emissions and saves logs.
+  - `GET /api/v1/compliance/emissions/history`: Retrieves past calculations.
+
+

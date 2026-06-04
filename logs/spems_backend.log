@@ -8026,3 +8026,132 @@
 [2026-06-04 09:39:04] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-01
 [2026-06-04 09:39:05] [INFO] [spems.edge.ingest] - Stream worker stopped for camera: CAM-GK-01
 [2026-06-04 09:39:05] [INFO] [spems.edge.ingest] - All camera ingestion streams stopped.
+[2026-06-04 09:49:14] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-04 09:49:14] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-04 09:49:17] [WARNING] [easyocr.easyocr] - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+[2026-06-04 21:54:17] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-04 21:54:18] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-04 21:54:26] [WARNING] [easyocr.easyocr] - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+[2026-06-04 21:54:38] [INFO] [spems.edge.ingest] - Registered camera CAM-GK-ENTRY-01 in stream manager.
+[2026-06-04 21:54:38] [INFO] [spems.edge.ingest] - Stream worker started for camera: CAM-GK-ENTRY-01
+[2026-06-04 21:54:38] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_anpr_feed.avi...
+[2026-06-04 21:54:38] [INFO] [spems.edge.ingest] - All camera ingestion streams started.
+[2026-06-04 21:54:38] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-ENTRY-01
+[2026-06-04 21:54:41] [INFO] [spems.edge.ingest] - Local video file reached EOF for camera: CAM-GK-ENTRY-01
+[2026-06-04 21:54:41] [INFO] [spems.edge.ingest] - Reconnecting camera CAM-GK-ENTRY-01 in 1.0s...
+[2026-06-04 21:54:42] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_anpr_feed.avi...
+[2026-06-04 21:54:42] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-ENTRY-01
+[2026-06-04 21:54:46] [INFO] [spems.edge.ingest] - Local video file reached EOF for camera: CAM-GK-ENTRY-01
+[2026-06-04 21:54:46] [INFO] [spems.edge.ingest] - Reconnecting camera CAM-GK-ENTRY-01 in 1.0s...
+[2026-06-04 21:54:47] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_anpr_feed.avi...
+[2026-06-04 21:54:47] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-ENTRY-01
+[2026-06-04 21:54:50] [INFO] [spems.edge.ingest] - Local video file reached EOF for camera: CAM-GK-ENTRY-01
+[2026-06-04 21:54:50] [INFO] [spems.edge.ingest] - Reconnecting camera CAM-GK-ENTRY-01 in 1.0s...
+[2026-06-04 21:54:51] [INFO] [spems.edge.ingest] - Stream worker stopped for camera: CAM-GK-ENTRY-01
+[2026-06-04 21:54:51] [INFO] [spems.edge.ingest] - All camera ingestion streams stopped.
+[2026-06-04 21:54:52] [INFO] [spems.edge.ingest] - Registered camera CAM-GK-01 in stream manager.
+[2026-06-04 21:54:52] [INFO] [spems.edge.ingest] - Registered camera CAM-BD-OFFLINE-02 in stream manager.
+[2026-06-04 21:54:52] [INFO] [spems.edge.ingest] - Stream worker started for camera: CAM-GK-01
+[2026-06-04 21:54:52] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_ingest_feed.avi...
+[2026-06-04 21:54:52] [INFO] [spems.edge.ingest] - Stream worker started for camera: CAM-BD-OFFLINE-02
+[2026-06-04 21:54:52] [INFO] [spems.edge.ingest] - Connecting to video stream source: rtsp://invalid-ip-mock:8554/live...
+[2026-06-04 21:54:52] [INFO] [spems.edge.ingest] - All camera ingestion streams started.
+[2026-06-04 21:54:52] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-01
+[2026-06-04 21:54:56] [INFO] [spems.edge.ingest] - Stream worker stopped for camera: CAM-GK-01
+[2026-06-04 21:54:59] [INFO] [spems.edge.ingest] - Stream worker stopped for camera: CAM-BD-OFFLINE-02
+[2026-06-04 21:54:59] [INFO] [spems.edge.ingest] - All camera ingestion streams stopped.
+[2026-06-04 21:55:00] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/violations "HTTP/1.1 201 Created"
+[2026-06-04 21:55:00] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations?status=PENDING "HTTP/1.1 200 OK"
+[2026-06-04 21:55:00] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/26 "HTTP/1.1 200 OK"
+[2026-06-04 21:55:00] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/26/verify "HTTP/1.1 200 OK"
+[2026-06-04 21:55:00] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/violations/26/action "HTTP/1.1 200 OK"
+[2026-06-04 21:55:00] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/26/history "HTTP/1.1 200 OK"
+[2026-06-04 21:55:00] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/audit-logs "HTTP/1.1 200 OK"
+[2026-06-04 21:55:00] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/26/pdf "HTTP/1.1 200 OK"
+[2026-06-04 21:55:00] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/violations/26/action "HTTP/1.1 200 OK"
+[2026-06-04 21:55:00] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/26/history "HTTP/1.1 200 OK"
+[2026-06-04 21:55:13] [WARNING] [spems.edge.ingest] - Connection failed for CAM-BD-OFFLINE-02. Retrying in 1.0s...
+[2026-06-04 21:55:14] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/compliance/environmental-risk-summary "HTTP/1.1 200 OK"
+[2026-06-04 21:55:15] [INFO] [spems.edge.ingest] - Registered camera CAM-GK-VALLEY-01 in stream manager.
+[2026-06-04 21:55:15] [INFO] [spems.edge.detector] - Loading YOLOv8 model weights from: yolov8n.pt
+[2026-06-04 21:55:16] [INFO] [spems.edge.ingest] - Stream worker started for camera: CAM-GK-VALLEY-01
+[2026-06-04 21:55:16] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_detector_feed.avi...
+[2026-06-04 21:55:16] [INFO] [spems.edge.ingest] - All camera ingestion streams started.
+[2026-06-04 21:55:16] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-VALLEY-01
+[2026-06-04 21:55:21] [INFO] [spems.edge.ingest] - Local video file reached EOF for camera: CAM-GK-VALLEY-01
+[2026-06-04 21:55:21] [INFO] [spems.edge.ingest] - Reconnecting camera CAM-GK-VALLEY-01 in 1.0s...
+[2026-06-04 21:55:22] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_detector_feed.avi...
+[2026-06-04 21:55:22] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-VALLEY-01
+[2026-06-04 21:55:26] [INFO] [spems.edge.ingest] - Local video file reached EOF for camera: CAM-GK-VALLEY-01
+[2026-06-04 21:55:26] [INFO] [spems.edge.ingest] - Reconnecting camera CAM-GK-VALLEY-01 in 1.0s...
+[2026-06-04 21:55:27] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_detector_feed.avi...
+[2026-06-04 21:55:27] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-VALLEY-01
+[2026-06-04 21:55:29] [INFO] [spems.edge.ingest] - Stream worker stopped for camera: CAM-GK-VALLEY-01
+[2026-06-04 21:55:29] [INFO] [spems.edge.ingest] - All camera ingestion streams stopped.
+[2026-06-04 21:55:29] [INFO] [spems.edge.ingest] - Registered camera CAM-GK-01 in stream manager.
+[2026-06-04 21:55:29] [INFO] [spems.edge.ingest] - Stream worker started for camera: CAM-GK-01
+[2026-06-04 21:55:29] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_tracking_feed.avi...
+[2026-06-04 21:55:29] [INFO] [spems.edge.ingest] - All camera ingestion streams started.
+[2026-06-04 21:55:29] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-01
+[2026-06-04 21:55:33] [INFO] [spems.edge.ingest] - Local video file reached EOF for camera: CAM-GK-01
+[2026-06-04 21:55:33] [INFO] [spems.edge.ingest] - Reconnecting camera CAM-GK-01 in 1.0s...
+[2026-06-04 21:55:34] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_tracking_feed.avi...
+[2026-06-04 21:55:34] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-01
+[2026-06-04 21:55:37] [INFO] [spems.edge.ingest] - Stream worker stopped for camera: CAM-GK-01
+[2026-06-04 21:55:37] [INFO] [spems.edge.ingest] - All camera ingestion streams stopped.
+[2026-06-04 22:18:09] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-04 22:18:09] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-04 22:18:10] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/compliance/emissions/calculate?save_to_history=true "HTTP/1.1 200 OK"
+[2026-06-04 22:18:10] [ERROR] [spems.db] - Database session exception: 500: Failed to fetch emissions history: (sqlite3.OperationalError) no such table: emissions_history
+[SQL: SELECT emissions_history.id, emissions_history.calculated_at, emissions_history.total_vehicles, emissions_history.total_transits, emissions_history.total_co2_kg, emissions_history.total_pm_g, emissions_history.trees_offset, emissions_history.offset_cost_inr, emissions_history.idle_savings_kg, emissions_history.segment_data 
+FROM emissions_history ORDER BY emissions_history.calculated_at DESC
+ LIMIT ? OFFSET ?]
+[parameters: (10, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[2026-06-04 22:18:10] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/compliance/emissions/history?limit=10 "HTTP/1.1 500 Internal Server Error"
+[2026-06-04 22:18:19] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-04 22:18:19] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-04 22:18:19] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/compliance/emissions/calculate?save_to_history=true "HTTP/1.1 200 OK"
+[2026-06-04 22:18:19] [ERROR] [spems.db] - Database session exception: 500: Failed to fetch emissions history: (sqlite3.OperationalError) no such table: emissions_history
+[SQL: SELECT emissions_history.id, emissions_history.calculated_at, emissions_history.total_vehicles, emissions_history.total_transits, emissions_history.total_co2_kg, emissions_history.total_pm_g, emissions_history.trees_offset, emissions_history.offset_cost_inr, emissions_history.idle_savings_kg, emissions_history.segment_data 
+FROM emissions_history ORDER BY emissions_history.calculated_at DESC
+ LIMIT ? OFFSET ?]
+[parameters: (10, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[2026-06-04 22:18:19] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/compliance/emissions/history?limit=10 "HTTP/1.1 500 Internal Server Error"
+[2026-06-04 22:18:43] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-04 22:18:43] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-04 22:18:43] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/compliance/emissions/calculate "HTTP/1.1 200 OK"
+[2026-06-04 22:18:56] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-04 22:18:56] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-04 22:18:56] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/compliance/emissions/calculate?save_to_history=true "HTTP/1.1 200 OK"
+[2026-06-04 22:18:56] [ERROR] [spems.db] - Database session exception: 500: Failed to fetch emissions history: (sqlite3.OperationalError) no such table: emissions_history
+[SQL: SELECT emissions_history.id, emissions_history.calculated_at, emissions_history.total_vehicles, emissions_history.total_transits, emissions_history.total_co2_kg, emissions_history.total_pm_g, emissions_history.trees_offset, emissions_history.offset_cost_inr, emissions_history.idle_savings_kg, emissions_history.segment_data 
+FROM emissions_history ORDER BY emissions_history.calculated_at DESC
+ LIMIT ? OFFSET ?]
+[parameters: (10, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[2026-06-04 22:18:56] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/compliance/emissions/history?limit=10 "HTTP/1.1 500 Internal Server Error"
+[2026-06-04 22:19:13] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-04 22:19:13] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-04 22:19:13] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/compliance/emissions/calculate?save_to_history=true "HTTP/1.1 200 OK"
+[2026-06-04 22:19:13] [ERROR] [spems.db] - Database session exception: 500: Failed to fetch emissions history: (sqlite3.OperationalError) no such table: emissions_history
+[SQL: SELECT emissions_history.id, emissions_history.calculated_at, emissions_history.total_vehicles, emissions_history.total_transits, emissions_history.total_co2_kg, emissions_history.total_pm_g, emissions_history.trees_offset, emissions_history.offset_cost_inr, emissions_history.idle_savings_kg, emissions_history.segment_data 
+FROM emissions_history ORDER BY emissions_history.calculated_at DESC
+ LIMIT ? OFFSET ?]
+[parameters: (10, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[2026-06-04 22:19:13] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/compliance/emissions/history?limit=10 "HTTP/1.1 500 Internal Server Error"
+[2026-06-04 22:19:25] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-04 22:19:25] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-04 22:19:26] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/compliance/emissions/calculate?save_to_history=true "HTTP/1.1 200 OK"
+[2026-06-04 22:19:26] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/compliance/emissions/history?limit=10 "HTTP/1.1 200 OK"
+[2026-06-04 22:19:35] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-04 22:19:35] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-04 22:19:35] [INFO] [spems.emissions] - Successfully recorded emissions calculation to history database.
+[2026-06-04 22:19:35] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/compliance/emissions/calculate?save_to_history=true "HTTP/1.1 200 OK"
+[2026-06-04 22:19:35] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/compliance/emissions/history?limit=10 "HTTP/1.1 200 OK"
+[2026-06-04 22:20:29] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-04 22:20:29] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-04 22:20:29] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/compliance/emissions/calculate?save_to_history=true "HTTP/1.1 200 OK"
+[2026-06-04 22:20:29] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/compliance/emissions/history?limit=10 "HTTP/1.1 200 OK"

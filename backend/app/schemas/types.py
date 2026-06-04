@@ -91,3 +91,37 @@ class AuditLogOut(BaseModel):
 
     class Config:
         from_attributes = True
+
+class SegmentEmissions(BaseModel):
+    vehicle_type: str
+    emission_standard: str
+    transits_count: int
+    co2_emitted_kg: float
+    pm_emitted_g: float
+
+class EmissionsSummary(BaseModel):
+    total_vehicles: int
+    total_transits: int
+    corridor_distance_km: float
+    total_co2_kg: float
+    total_pm_g: float
+    trees_offset_required: int
+    offset_cost_inr: float
+    idle_savings_kg: float
+    segments: List[SegmentEmissions]
+
+class EmissionsHistoryOut(BaseModel):
+    id: int
+    calculated_at: datetime
+    total_vehicles: int
+    total_transits: int
+    total_co2_kg: float
+    total_pm_g: float
+    trees_offset: int
+    offset_cost_inr: float
+    idle_savings_kg: float
+    segment_data: Optional[List[SegmentEmissions]] = None
+
+    class Config:
+        from_attributes = True
+

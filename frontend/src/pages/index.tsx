@@ -28,6 +28,7 @@ const DashboardMap = dynamic(() => import('../components/DashboardMap'), {
 });
 import ViolationsFeed, { ViolationRecord } from '../components/ViolationsFeed';
 import TelemetryCharts from '../components/TelemetryCharts';
+import EmissionsCalculator from '../components/EmissionsCalculator';
 
 interface CameraRecord {
   id: string;
@@ -259,8 +260,17 @@ export default function Home() {
           <div style={{ color: '#9ca3af', padding: '10px 14px', borderRadius: '8px', fontSize: '0.8rem', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '10px' }}>
             <Activity size={14} /> Spatial Heatmaps
           </div>
-          <div style={{ color: '#9ca3af', padding: '10px 14px', borderRadius: '8px', fontSize: '0.8rem', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '10px' }}>
+          <div 
+            onClick={() => window.location.href = '/officer'}
+            style={{ color: '#9ca3af', padding: '10px 14px', borderRadius: '8px', fontSize: '0.8rem', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '10px' }}
+          >
             <Cpu size={14} /> RTO Challan Audits
+          </div>
+          <div 
+            onClick={() => window.location.href = '/demo'}
+            style={{ color: '#9ca3af', padding: '10px 14px', borderRadius: '8px', fontSize: '0.8rem', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '10px' }}
+          >
+            <TrendingUp size={14} /> Stakeholder Demo Desk
           </div>
         </nav>
 
@@ -659,6 +669,9 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+
+              {/* Emissions & Offsets Calculator */}
+              <EmissionsCalculator />
 
               {/* 2. Prometheus Camera health connection status */}
               <div className="glass-panel" style={{ padding: '20px', display: 'flex', flexDirection: 'column', gap: '12px' }}>

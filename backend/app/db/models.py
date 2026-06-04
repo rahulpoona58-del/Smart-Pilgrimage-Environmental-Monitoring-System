@@ -196,3 +196,18 @@ class AuditLog(Base):
     details = Column(Text)
     ip_address = Column(String(45))
     created_at = Column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc), primary_key=not is_sqlite)
+
+class EmissionsHistory(Base):
+    __tablename__ = "emissions_history"
+
+    id = Column(Integer, primary_key=True)
+    calculated_at = Column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc))
+    total_vehicles = Column(Integer, nullable=False)
+    total_transits = Column(Integer, nullable=False)
+    total_co2_kg = Column(Numeric(12, 2), nullable=False)
+    total_pm_g = Column(Numeric(12, 2), nullable=False)
+    trees_offset = Column(Integer, nullable=False)
+    offset_cost_inr = Column(Numeric(12, 2), nullable=False)
+    idle_savings_kg = Column(Numeric(12, 2), nullable=False)
+    segment_data = Column(JSON, nullable=True) # Mapped details for segment breakdowns
+

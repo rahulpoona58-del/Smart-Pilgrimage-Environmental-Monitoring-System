@@ -4,6 +4,8 @@ from typing import List
 
 from ....db.session import get_async_db
 from ....core.compliance import ComplianceScoringEngine
+from ....core.emissions import EmissionsCalculatorEngine
+from ....schemas.types import EmissionsSummary, EmissionsHistoryOut
 
 router = APIRouter()
 
@@ -79,4 +81,37 @@ async def get_environmental_risk_summary(
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail=f"Environmental risk scoring failed: {e}"
+        )
+
+@router.get("/emissions/calculate", response_model=EmissionsSummary)
+async def calculate_current_emissions(
+    save_to_history: bool = Query(True, description="Commit calculation record to log history database"),
+    db: AsyncSession = Depends(get_async_db)
+):
+    """
+    Calculates real-time CO2 footprint and fine particulate output for active corridors.
+    Provides local sapling offsets and environmental fund allocations.
+    """
+    try:
+        summary = await EmissionsCalculatorEngine.calculate_emissions(db, save_to_history=save_to_history)
+        return summary
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Emissions calculation failed: {e}"
+        )
+
+@router.get("/emissions/history", response_model=List[EmissionsHistoryOut])
+async def get_emissions_calculation_history(
+    limit: int = Query(50, ge=1, le=100, description="Max calculation records to retrieve"),
+    db: AsyncSession = Depends(get_async_db)
+):
+    """Retrieves historical logs of emissions calculations for compliance auditing."""
+    try:
+        history = await EmissionsCalculatorEngine.get_emissions_history(db, limit=limit)
+        return history
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Failed to fetch emissions history: {e}"
         )
