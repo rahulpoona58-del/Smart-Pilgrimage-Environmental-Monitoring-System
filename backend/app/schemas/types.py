@@ -75,3 +75,19 @@ class TelemetryOut(BaseModel):
 
     class Config:
         from_attributes = True
+
+class ViolationReviewAction(BaseModel):
+    action: str = Field(..., description="Action to perform: 'APPROVE' or 'DISMISS'")
+    officer_badge: Optional[str] = Field(None, example="UK-POL-7718")
+    notes: Optional[str] = Field(None, example="Verified license plate via visual crop.")
+
+class AuditLogOut(BaseModel):
+    id: int
+    user_id: Optional[str]
+    action_type: str
+    details: str
+    ip_address: Optional[str]
+    created_at: datetime
+
+    class Config:
+        from_attributes = True

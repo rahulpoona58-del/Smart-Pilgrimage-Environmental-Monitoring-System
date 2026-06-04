@@ -59,3 +59,24 @@ async def get_route_compliance(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail=f"Route evaluation failed: {e}"
         )
+
+@router.get("/environmental-risk-summary")
+async def get_environmental_risk_summary(
+    db: AsyncSession = Depends(get_async_db)
+):
+    """
+    Exposes a summary of all environmental risk and eco-scoring indicators:
+    - Vehicle eco score
+    - Location eco score
+    - Route eco score
+    - Repeat offender score
+    - Pollution impact score
+    """
+    try:
+        risk_summary = await ComplianceScoringEngine.calculate_environmental_risk_scoring(db)
+        return risk_summary
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Environmental risk scoring failed: {e}"
+        )

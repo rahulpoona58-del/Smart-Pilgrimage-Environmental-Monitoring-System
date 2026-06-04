@@ -246,3 +246,108 @@ class ComplianceScoringEngine:
             "locations_evaluated": len(scores),
             "route_breakdown": breakdown
         }
+
+    @classmethod
+    async def calculate_environmental_risk_scoring(cls, db: AsyncSession) -> dict:
+        """
+        Generates a comprehensive environmental risk scoring payload including:
+        - Vehicle eco score: average eco index of all transited vehicles
+        - Location eco score: green compliance index for Gaurikund (ID 1)
+        - Route eco score: average green index across Rudraprayag-Chamoli loop
+        - Repeat offender score: measure of recurring infractions
+        - Pollution impact score: based on PM2.5, AQI, and CO2 readings
+        """
+        # 1. VEHICLE ECO SCORE
+        # S_eco = 0.4 * S_emission + 0.3 * S_fuel + 0.3 * S_compliance
+        query_vehicles = select(Vehicle)
+        res_vehicles = await db.execute(query_vehicles)
+        vehicles = res_vehicles.scalars().all()
+        
+        vehicle_scores = []
+        for v in vehicles:
+            # Emission standard score
+            std = (v.emission_standard or "BS-VI").upper()
+            if "BS-VI" in std or "BS6" in std:
+                s_emission = 100
+            elif "BS-V" in std or "BS5" in std:
+                s_emission = 80
+            elif "BS-IV" in std or "BS4" in std:
+                s_emission = 70
+            elif "BS-III" in std or "BS3" in std:
+                s_emission = 40
+            else:
+                s_emission = 30
+                
+            # Fuel type score
+            fuel = (v.fuel_type or "Petrol").lower()
+            if "electric" in fuel:
+                s_fuel = 100
+            elif "cng" in fuel or "hybrid" in fuel:
+                s_fuel = 90
+            elif "petrol" in fuel or "lpg" in fuel:
+                s_fuel = 70
+            elif "diesel" in fuel:
+                s_fuel = 50
+            else:
+                s_fuel = 60
+                
+            s_comp = v.compliance_score if v.compliance_score is not None else 100
+            eco_val = int(0.4 * s_emission + 0.3 * s_fuel + 0.3 * s_comp)
+            vehicle_scores.append(eco_val)
+            
+        avg_vehicle_eco = int(np.mean(vehicle_scores)) if vehicle_scores else 85
+        
+        # 2. LOCATION ECO SCORE
+        loc_score_data = await cls.calculate_location_compliance_score(db, 1)
+        location_eco = loc_score_data.get("composite_green_index", 85)
+        
+        # 3. ROUTE ECO SCORE
+        route_score_data = await cls.calculate_route_compliance_score(db, [1, 2])
+        route_eco = route_score_data.get("route_compliance_index", 80)
+        
+        # 4. REPEAT OFFENDER SCORE
+        # S_repeat = min(100, count of vehicles with multiple violations * 25)
+        query_offenders = select(Violation.plate_number, func.count(Violation.id)).where(
+            Violation.status != "DISMISSED"
+        ).group_by(Violation.plate_number)
+        res_offenders = await db.execute(query_offenders)
+        offenders = res_offenders.all()
+        
+        total_offenders = len(offenders)
+        repeat_offenders = sum(1 for plate, count in offenders if count >= 2)
+        
+        if total_offenders > 0:
+            repeat_ratio = repeat_offenders / total_offenders
+            repeat_score = min(100, int(repeat_ratio * 100 + (repeat_offenders * 10)))
+        else:
+            repeat_score = 0
+            
+        # 5. POLLUTION IMPACT SCORE
+        # Derived from latest SensorData
+        query_sensor = select(SensorData).order_by(SensorData.measured_at.desc()).limit(1)
+        res_sensor = await db.execute(query_sensor)
+        latest_sensor = res_sensor.scalars().first()
+        
+        if latest_sensor:
+            aqi = latest_sensor.aqi or 50
+            pm25 = float(latest_sensor.pm25 or 15.0)
+            co2 = float(latest_sensor.co2 or 400.0)
+        else:
+            aqi = 65
+            pm25 = 22.0
+            co2 = 415.0
+            
+        s_aqi = min(100, int((aqi / 300) * 100))
+        s_pm25 = min(100, int((pm25 / 100) * 100))
+        s_co2 = min(100, int((max(0, co2 - 400) / 600) * 100))
+        
+        pollution_impact = int(0.4 * s_aqi + 0.3 * s_pm25 + 0.3 * s_co2)
+        pollution_impact = max(5, min(100, pollution_impact)) # baseline minimum of 5% impact
+        
+        return {
+            "vehicle_eco_score": avg_vehicle_eco,
+            "location_eco_score": location_eco,
+            "route_eco_score": route_eco,
+            "repeat_offender_score": repeat_score,
+            "pollution_impact_score": pollution_impact
+        }

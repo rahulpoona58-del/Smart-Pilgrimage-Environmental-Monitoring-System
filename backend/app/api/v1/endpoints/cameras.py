@@ -1,4 +1,5 @@
 from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi.responses import StreamingResponse
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.future import select
 from pydantic import BaseModel
@@ -6,6 +7,7 @@ from typing import List
 
 from ....db.session import get_async_db
 from ....db.models import Camera, Location
+from ....core.camera_manager import system_camera_manager
 
 router = APIRouter()
 
@@ -68,3 +70,30 @@ async def list_cameras(db: AsyncSession = Depends(get_async_db)):
     result = await db.execute(query)
     cameras = result.scalars().all()
     return cameras
+
+@router.get("/{camera_id}/stream")
+async def get_camera_mjpeg_stream(
+    camera_id: str,
+    db: AsyncSession = Depends(get_async_db)
+):
+    """
+    Exposes a live, processed video stream for a camera checkpoint (MJPEG).
+    Annotates frames with real-time detections, ANPR locks, and active alerts.
+    """
+    # Verify camera exists or is a valid default simulated id
+    if camera_id not in ["CAM-GK-ENTRY", "CAM-GK-RIVER-04", "CAM-GK-TEST-99", "UAV-PATROL-01"]:
+        # check database as fallback
+        query = select(Camera).where(Camera.id == camera_id)
+        result = await db.execute(query)
+        camera = result.scalars().first()
+        if not camera:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail="Camera stream source not registered."
+            )
+            
+    return StreamingResponse(
+        system_camera_manager.generate_mjpeg_stream(camera_id, db),
+        media_type="multipart/x-mixed-replace; boundary=frame"
+    )
+

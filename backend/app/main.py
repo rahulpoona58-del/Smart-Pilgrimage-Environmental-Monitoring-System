@@ -131,7 +131,16 @@ async def startup_event():
                 direction_angle=0.0,
                 is_active=True
             )
-            session.add_all([cam1, cam2, cam3])
+            cam4 = Camera(
+                id="UAV-PATROL-01",
+                location_id=1,
+                model_name="DJI Matrice 300 RTK",
+                rtsp_url="rtsp://mock-video-stream:8554/uav-patrol",
+                georeference_coords="SRID=4326;POINT(79.0060 30.6510)",
+                direction_angle=45.0,
+                is_active=True
+            )
+            session.add_all([cam1, cam2, cam3, cam4])
 
         await session.commit()
 

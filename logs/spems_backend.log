@@ -7702,3 +7702,327 @@
 
   File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 177, in log_iot_sensor_telemetry
     POST /api/v1/telemetry
+[2026-06-04 09:10:05] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-04 09:10:05] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-04 09:10:05] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/violations "HTTP/1.1 201 Created"
+[2026-06-04 09:10:05] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations?status=PENDING "HTTP/1.1 200 OK"
+[2026-06-04 09:10:05] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/20 "HTTP/1.1 200 OK"
+[2026-06-04 09:10:05] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/20/verify "HTTP/1.1 200 OK"
+[2026-06-04 09:10:05] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/violations/20/action "HTTP/1.1 200 OK"
+[2026-06-04 09:10:05] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/20/history "HTTP/1.1 200 OK"
+[2026-06-04 09:10:05] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/audit-logs "HTTP/1.1 200 OK"
+[2026-06-04 09:10:05] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/20/pdf "HTTP/1.1 200 OK"
+[2026-06-04 09:10:05] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/violations/20/action "HTTP/1.1 200 OK"
+[2026-06-04 09:10:05] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/20/history "HTTP/1.1 200 OK"
+[2026-06-04 09:12:16] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-04 09:12:16] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-04 09:12:17] [WARNING] [easyocr.easyocr] - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+[2026-06-04 09:12:21] [INFO] [spems.edge.ingest] - Registered camera CAM-GK-ENTRY-01 in stream manager.
+[2026-06-04 09:12:21] [INFO] [spems.edge.ingest] - Stream worker started for camera: CAM-GK-ENTRY-01
+[2026-06-04 09:12:21] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_anpr_feed.avi...
+[2026-06-04 09:12:21] [INFO] [spems.edge.ingest] - All camera ingestion streams started.
+[2026-06-04 09:12:21] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-ENTRY-01
+[2026-06-04 09:12:24] [INFO] [spems.edge.ingest] - Local video file reached EOF for camera: CAM-GK-ENTRY-01
+[2026-06-04 09:12:24] [INFO] [spems.edge.ingest] - Reconnecting camera CAM-GK-ENTRY-01 in 1.0s...
+[2026-06-04 09:12:25] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_anpr_feed.avi...
+[2026-06-04 09:12:25] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-ENTRY-01
+[2026-06-04 09:12:28] [INFO] [spems.edge.ingest] - Local video file reached EOF for camera: CAM-GK-ENTRY-01
+[2026-06-04 09:12:28] [INFO] [spems.edge.ingest] - Reconnecting camera CAM-GK-ENTRY-01 in 1.0s...
+[2026-06-04 09:12:29] [INFO] [spems.edge.ingest] - Stream worker stopped for camera: CAM-GK-ENTRY-01
+[2026-06-04 09:12:29] [INFO] [spems.edge.ingest] - All camera ingestion streams stopped.
+[2026-06-04 09:12:29] [INFO] [spems.edge.ingest] - Registered camera CAM-GK-01 in stream manager.
+[2026-06-04 09:12:29] [INFO] [spems.edge.ingest] - Registered camera CAM-BD-OFFLINE-02 in stream manager.
+[2026-06-04 09:12:29] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_ingest_feed.avi...
+[2026-06-04 09:12:29] [INFO] [spems.edge.ingest] - Stream worker started for camera: CAM-GK-01
+[2026-06-04 09:12:29] [INFO] [spems.edge.ingest] - Stream worker started for camera: CAM-BD-OFFLINE-02
+[2026-06-04 09:12:29] [INFO] [spems.edge.ingest] - Connecting to video stream source: rtsp://invalid-ip-mock:8554/live...
+[2026-06-04 09:12:29] [INFO] [spems.edge.ingest] - All camera ingestion streams started.
+[2026-06-04 09:12:29] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-01
+[2026-06-04 09:12:33] [INFO] [spems.edge.ingest] - Stream worker stopped for camera: CAM-GK-01
+[2026-06-04 09:12:36] [INFO] [spems.edge.ingest] - Stream worker stopped for camera: CAM-BD-OFFLINE-02
+[2026-06-04 09:12:36] [INFO] [spems.edge.ingest] - All camera ingestion streams stopped.
+[2026-06-04 09:12:37] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/violations "HTTP/1.1 201 Created"
+[2026-06-04 09:12:37] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations?status=PENDING "HTTP/1.1 200 OK"
+[2026-06-04 09:12:37] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/21 "HTTP/1.1 200 OK"
+[2026-06-04 09:12:37] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/21/verify "HTTP/1.1 200 OK"
+[2026-06-04 09:12:37] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/violations/21/action "HTTP/1.1 200 OK"
+[2026-06-04 09:12:37] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/21/history "HTTP/1.1 200 OK"
+[2026-06-04 09:12:37] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/audit-logs "HTTP/1.1 200 OK"
+[2026-06-04 09:12:37] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/21/pdf "HTTP/1.1 200 OK"
+[2026-06-04 09:12:37] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/violations/21/action "HTTP/1.1 200 OK"
+[2026-06-04 09:12:37] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/21/history "HTTP/1.1 200 OK"
+[2026-06-04 09:12:48] [WARNING] [spems.edge.ingest] - Connection failed for CAM-BD-OFFLINE-02. Retrying in 1.0s...
+[2026-06-04 09:12:49] [INFO] [spems.edge.ingest] - Registered camera CAM-GK-VALLEY-01 in stream manager.
+[2026-06-04 09:12:49] [INFO] [spems.edge.detector] - Loading YOLOv8 model weights from: yolov8n.pt
+[2026-06-04 09:12:49] [INFO] [spems.edge.ingest] - Stream worker started for camera: CAM-GK-VALLEY-01
+[2026-06-04 09:12:49] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_detector_feed.avi...
+[2026-06-04 09:12:49] [INFO] [spems.edge.ingest] - All camera ingestion streams started.
+[2026-06-04 09:12:49] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-VALLEY-01
+[2026-06-04 09:12:54] [INFO] [spems.edge.ingest] - Local video file reached EOF for camera: CAM-GK-VALLEY-01
+[2026-06-04 09:12:54] [INFO] [spems.edge.ingest] - Reconnecting camera CAM-GK-VALLEY-01 in 1.0s...
+[2026-06-04 09:12:55] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_detector_feed.avi...
+[2026-06-04 09:12:55] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-VALLEY-01
+[2026-06-04 09:12:56] [INFO] [spems.edge.ingest] - Stream worker stopped for camera: CAM-GK-VALLEY-01
+[2026-06-04 09:12:56] [INFO] [spems.edge.ingest] - All camera ingestion streams stopped.
+[2026-06-04 09:12:56] [INFO] [spems.edge.ingest] - Registered camera CAM-GK-01 in stream manager.
+[2026-06-04 09:12:56] [INFO] [spems.edge.ingest] - Stream worker started for camera: CAM-GK-01
+[2026-06-04 09:12:56] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_tracking_feed.avi...
+[2026-06-04 09:12:56] [INFO] [spems.edge.ingest] - All camera ingestion streams started.
+[2026-06-04 09:12:56] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-01
+[2026-06-04 09:13:00] [INFO] [spems.edge.ingest] - Local video file reached EOF for camera: CAM-GK-01
+[2026-06-04 09:13:00] [INFO] [spems.edge.ingest] - Reconnecting camera CAM-GK-01 in 1.0s...
+[2026-06-04 09:13:01] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_tracking_feed.avi...
+[2026-06-04 09:13:01] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-01
+[2026-06-04 09:13:01] [INFO] [spems.edge.ingest] - Stream worker stopped for camera: CAM-GK-01
+[2026-06-04 09:13:01] [INFO] [spems.edge.ingest] - All camera ingestion streams stopped.
+[2026-06-04 09:22:08] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-04 09:22:08] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-04 09:22:09] [WARNING] [easyocr.easyocr] - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+[2026-06-04 09:22:14] [INFO] [spems.edge.ingest] - Registered camera CAM-GK-ENTRY-01 in stream manager.
+[2026-06-04 09:22:14] [INFO] [spems.edge.ingest] - Stream worker started for camera: CAM-GK-ENTRY-01
+[2026-06-04 09:22:14] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_anpr_feed.avi...
+[2026-06-04 09:22:14] [INFO] [spems.edge.ingest] - All camera ingestion streams started.
+[2026-06-04 09:22:14] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-ENTRY-01
+[2026-06-04 09:22:17] [INFO] [spems.edge.ingest] - Local video file reached EOF for camera: CAM-GK-ENTRY-01
+[2026-06-04 09:22:17] [INFO] [spems.edge.ingest] - Reconnecting camera CAM-GK-ENTRY-01 in 1.0s...
+[2026-06-04 09:22:18] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_anpr_feed.avi...
+[2026-06-04 09:22:18] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-ENTRY-01
+[2026-06-04 09:22:22] [INFO] [spems.edge.ingest] - Local video file reached EOF for camera: CAM-GK-ENTRY-01
+[2026-06-04 09:22:22] [INFO] [spems.edge.ingest] - Reconnecting camera CAM-GK-ENTRY-01 in 1.0s...
+[2026-06-04 09:22:22] [INFO] [spems.edge.ingest] - Stream worker stopped for camera: CAM-GK-ENTRY-01
+[2026-06-04 09:22:22] [INFO] [spems.edge.ingest] - All camera ingestion streams stopped.
+[2026-06-04 09:22:22] [INFO] [spems.edge.ingest] - Registered camera CAM-GK-01 in stream manager.
+[2026-06-04 09:22:22] [INFO] [spems.edge.ingest] - Registered camera CAM-BD-OFFLINE-02 in stream manager.
+[2026-06-04 09:22:22] [INFO] [spems.edge.ingest] - Stream worker started for camera: CAM-GK-01
+[2026-06-04 09:22:22] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_ingest_feed.avi...
+[2026-06-04 09:22:22] [INFO] [spems.edge.ingest] - Stream worker started for camera: CAM-BD-OFFLINE-02
+[2026-06-04 09:22:22] [INFO] [spems.edge.ingest] - Connecting to video stream source: rtsp://invalid-ip-mock:8554/live...
+[2026-06-04 09:22:22] [INFO] [spems.edge.ingest] - All camera ingestion streams started.
+[2026-06-04 09:22:22] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-01
+[2026-06-04 09:22:26] [INFO] [spems.edge.ingest] - Stream worker stopped for camera: CAM-GK-01
+[2026-06-04 09:22:29] [INFO] [spems.edge.ingest] - Stream worker stopped for camera: CAM-BD-OFFLINE-02
+[2026-06-04 09:22:29] [INFO] [spems.edge.ingest] - All camera ingestion streams stopped.
+[2026-06-04 09:22:29] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/violations "HTTP/1.1 201 Created"
+[2026-06-04 09:22:29] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations?status=PENDING "HTTP/1.1 200 OK"
+[2026-06-04 09:22:29] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/22 "HTTP/1.1 200 OK"
+[2026-06-04 09:22:29] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/22/verify "HTTP/1.1 200 OK"
+[2026-06-04 09:22:30] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/violations/22/action "HTTP/1.1 200 OK"
+[2026-06-04 09:22:30] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/22/history "HTTP/1.1 200 OK"
+[2026-06-04 09:22:30] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/audit-logs "HTTP/1.1 200 OK"
+[2026-06-04 09:22:30] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/22/pdf "HTTP/1.1 200 OK"
+[2026-06-04 09:22:30] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/violations/22/action "HTTP/1.1 200 OK"
+[2026-06-04 09:22:30] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/22/history "HTTP/1.1 200 OK"
+[2026-06-04 09:22:41] [WARNING] [spems.edge.ingest] - Connection failed for CAM-BD-OFFLINE-02. Retrying in 1.0s...
+[2026-06-04 09:22:42] [INFO] [spems.edge.ingest] - Registered camera CAM-GK-VALLEY-01 in stream manager.
+[2026-06-04 09:22:42] [INFO] [spems.edge.detector] - Loading YOLOv8 model weights from: yolov8n.pt
+[2026-06-04 09:22:42] [INFO] [spems.edge.ingest] - Stream worker started for camera: CAM-GK-VALLEY-01
+[2026-06-04 09:22:42] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_detector_feed.avi...
+[2026-06-04 09:22:42] [INFO] [spems.edge.ingest] - All camera ingestion streams started.
+[2026-06-04 09:22:42] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-VALLEY-01
+[2026-06-04 09:22:47] [INFO] [spems.edge.ingest] - Local video file reached EOF for camera: CAM-GK-VALLEY-01
+[2026-06-04 09:22:47] [INFO] [spems.edge.ingest] - Reconnecting camera CAM-GK-VALLEY-01 in 1.0s...
+[2026-06-04 09:22:48] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_detector_feed.avi...
+[2026-06-04 09:22:48] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-VALLEY-01
+[2026-06-04 09:22:50] [INFO] [spems.edge.ingest] - Stream worker stopped for camera: CAM-GK-VALLEY-01
+[2026-06-04 09:22:50] [INFO] [spems.edge.ingest] - All camera ingestion streams stopped.
+[2026-06-04 09:22:50] [INFO] [spems.edge.ingest] - Registered camera CAM-GK-01 in stream manager.
+[2026-06-04 09:22:50] [INFO] [spems.edge.ingest] - Stream worker started for camera: CAM-GK-01
+[2026-06-04 09:22:50] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_tracking_feed.avi...
+[2026-06-04 09:22:50] [INFO] [spems.edge.ingest] - All camera ingestion streams started.
+[2026-06-04 09:22:50] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-01
+[2026-06-04 09:22:55] [INFO] [spems.edge.ingest] - Local video file reached EOF for camera: CAM-GK-01
+[2026-06-04 09:22:55] [INFO] [spems.edge.ingest] - Reconnecting camera CAM-GK-01 in 1.0s...
+[2026-06-04 09:22:56] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_tracking_feed.avi...
+[2026-06-04 09:22:56] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-01
+[2026-06-04 09:22:56] [INFO] [spems.edge.ingest] - Stream worker stopped for camera: CAM-GK-01
+[2026-06-04 09:22:56] [INFO] [spems.edge.ingest] - All camera ingestion streams stopped.
+[2026-06-04 09:24:02] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-04 09:24:02] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-04 09:24:04] [WARNING] [easyocr.easyocr] - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+[2026-06-04 09:24:14] [INFO] [spems.edge.ingest] - Registered camera CAM-GK-ENTRY-01 in stream manager.
+[2026-06-04 09:24:14] [INFO] [spems.edge.ingest] - Stream worker started for camera: CAM-GK-ENTRY-01
+[2026-06-04 09:24:14] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_anpr_feed.avi...
+[2026-06-04 09:24:14] [INFO] [spems.edge.ingest] - All camera ingestion streams started.
+[2026-06-04 09:24:14] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-ENTRY-01
+[2026-06-04 09:24:17] [INFO] [spems.edge.ingest] - Local video file reached EOF for camera: CAM-GK-ENTRY-01
+[2026-06-04 09:24:17] [INFO] [spems.edge.ingest] - Reconnecting camera CAM-GK-ENTRY-01 in 1.0s...
+[2026-06-04 09:24:18] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_anpr_feed.avi...
+[2026-06-04 09:24:18] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-ENTRY-01
+[2026-06-04 09:24:22] [INFO] [spems.edge.ingest] - Local video file reached EOF for camera: CAM-GK-ENTRY-01
+[2026-06-04 09:24:22] [INFO] [spems.edge.ingest] - Reconnecting camera CAM-GK-ENTRY-01 in 1.0s...
+[2026-06-04 09:24:22] [INFO] [spems.edge.ingest] - Stream worker stopped for camera: CAM-GK-ENTRY-01
+[2026-06-04 09:24:22] [INFO] [spems.edge.ingest] - All camera ingestion streams stopped.
+[2026-06-04 09:24:23] [INFO] [spems.edge.ingest] - Registered camera CAM-GK-01 in stream manager.
+[2026-06-04 09:24:23] [INFO] [spems.edge.ingest] - Registered camera CAM-BD-OFFLINE-02 in stream manager.
+[2026-06-04 09:24:23] [INFO] [spems.edge.ingest] - Stream worker started for camera: CAM-GK-01
+[2026-06-04 09:24:23] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_ingest_feed.avi...
+[2026-06-04 09:24:23] [INFO] [spems.edge.ingest] - Stream worker started for camera: CAM-BD-OFFLINE-02
+[2026-06-04 09:24:23] [INFO] [spems.edge.ingest] - Connecting to video stream source: rtsp://invalid-ip-mock:8554/live...
+[2026-06-04 09:24:23] [INFO] [spems.edge.ingest] - All camera ingestion streams started.
+[2026-06-04 09:24:23] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-01
+[2026-06-04 09:24:27] [INFO] [spems.edge.ingest] - Stream worker stopped for camera: CAM-GK-01
+[2026-06-04 09:24:30] [INFO] [spems.edge.ingest] - Stream worker stopped for camera: CAM-BD-OFFLINE-02
+[2026-06-04 09:24:30] [INFO] [spems.edge.ingest] - All camera ingestion streams stopped.
+[2026-06-04 09:24:30] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/violations "HTTP/1.1 201 Created"
+[2026-06-04 09:24:30] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations?status=PENDING "HTTP/1.1 200 OK"
+[2026-06-04 09:24:30] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/23 "HTTP/1.1 200 OK"
+[2026-06-04 09:24:30] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/23/verify "HTTP/1.1 200 OK"
+[2026-06-04 09:24:30] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/violations/23/action "HTTP/1.1 200 OK"
+[2026-06-04 09:24:30] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/23/history "HTTP/1.1 200 OK"
+[2026-06-04 09:24:30] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/audit-logs "HTTP/1.1 200 OK"
+[2026-06-04 09:24:30] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/23/pdf "HTTP/1.1 200 OK"
+[2026-06-04 09:24:30] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/violations/23/action "HTTP/1.1 200 OK"
+[2026-06-04 09:24:30] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/23/history "HTTP/1.1 200 OK"
+[2026-06-04 09:24:42] [WARNING] [spems.edge.ingest] - Connection failed for CAM-BD-OFFLINE-02. Retrying in 1.0s...
+[2026-06-04 09:24:42] [INFO] [spems.edge.ingest] - Registered camera CAM-GK-VALLEY-01 in stream manager.
+[2026-06-04 09:24:42] [INFO] [spems.edge.detector] - Loading YOLOv8 model weights from: yolov8n.pt
+[2026-06-04 09:24:42] [INFO] [spems.edge.ingest] - Stream worker started for camera: CAM-GK-VALLEY-01
+[2026-06-04 09:24:42] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_detector_feed.avi...
+[2026-06-04 09:24:42] [INFO] [spems.edge.ingest] - All camera ingestion streams started.
+[2026-06-04 09:24:42] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-VALLEY-01
+[2026-06-04 09:24:47] [INFO] [spems.edge.ingest] - Local video file reached EOF for camera: CAM-GK-VALLEY-01
+[2026-06-04 09:24:47] [INFO] [spems.edge.ingest] - Reconnecting camera CAM-GK-VALLEY-01 in 1.0s...
+[2026-06-04 09:24:48] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_detector_feed.avi...
+[2026-06-04 09:24:48] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-VALLEY-01
+[2026-06-04 09:24:49] [INFO] [spems.edge.ingest] - Stream worker stopped for camera: CAM-GK-VALLEY-01
+[2026-06-04 09:24:49] [INFO] [spems.edge.ingest] - All camera ingestion streams stopped.
+[2026-06-04 09:24:50] [INFO] [spems.edge.ingest] - Registered camera CAM-GK-01 in stream manager.
+[2026-06-04 09:24:50] [INFO] [spems.edge.ingest] - Stream worker started for camera: CAM-GK-01
+[2026-06-04 09:24:50] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_tracking_feed.avi...
+[2026-06-04 09:24:50] [INFO] [spems.edge.ingest] - All camera ingestion streams started.
+[2026-06-04 09:24:50] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-01
+[2026-06-04 09:24:54] [INFO] [spems.edge.ingest] - Local video file reached EOF for camera: CAM-GK-01
+[2026-06-04 09:24:54] [INFO] [spems.edge.ingest] - Reconnecting camera CAM-GK-01 in 1.0s...
+[2026-06-04 09:24:55] [INFO] [spems.edge.ingest] - Stream worker stopped for camera: CAM-GK-01
+[2026-06-04 09:24:55] [INFO] [spems.edge.ingest] - All camera ingestion streams stopped.
+[2026-06-04 09:28:37] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-04 09:28:37] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-04 09:28:37] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/compliance/environmental-risk-summary "HTTP/1.1 200 OK"
+[2026-06-04 09:29:47] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-04 09:29:47] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-04 09:29:48] [WARNING] [easyocr.easyocr] - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+[2026-06-04 09:29:52] [INFO] [spems.edge.ingest] - Registered camera CAM-GK-ENTRY-01 in stream manager.
+[2026-06-04 09:29:52] [INFO] [spems.edge.ingest] - Stream worker started for camera: CAM-GK-ENTRY-01
+[2026-06-04 09:29:52] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_anpr_feed.avi...
+[2026-06-04 09:29:52] [INFO] [spems.edge.ingest] - All camera ingestion streams started.
+[2026-06-04 09:29:52] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-ENTRY-01
+[2026-06-04 09:29:55] [INFO] [spems.edge.ingest] - Local video file reached EOF for camera: CAM-GK-ENTRY-01
+[2026-06-04 09:29:55] [INFO] [spems.edge.ingest] - Reconnecting camera CAM-GK-ENTRY-01 in 1.0s...
+[2026-06-04 09:29:56] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_anpr_feed.avi...
+[2026-06-04 09:29:56] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-ENTRY-01
+[2026-06-04 09:29:59] [INFO] [spems.edge.ingest] - Local video file reached EOF for camera: CAM-GK-ENTRY-01
+[2026-06-04 09:29:59] [INFO] [spems.edge.ingest] - Reconnecting camera CAM-GK-ENTRY-01 in 1.0s...
+[2026-06-04 09:30:00] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_anpr_feed.avi...
+[2026-06-04 09:30:00] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-ENTRY-01
+[2026-06-04 09:30:00] [INFO] [spems.edge.ingest] - Stream worker stopped for camera: CAM-GK-ENTRY-01
+[2026-06-04 09:30:00] [INFO] [spems.edge.ingest] - All camera ingestion streams stopped.
+[2026-06-04 09:30:01] [INFO] [spems.edge.ingest] - Registered camera CAM-GK-01 in stream manager.
+[2026-06-04 09:30:01] [INFO] [spems.edge.ingest] - Registered camera CAM-BD-OFFLINE-02 in stream manager.
+[2026-06-04 09:30:01] [INFO] [spems.edge.ingest] - Stream worker started for camera: CAM-GK-01
+[2026-06-04 09:30:01] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_ingest_feed.avi...
+[2026-06-04 09:30:01] [INFO] [spems.edge.ingest] - Stream worker started for camera: CAM-BD-OFFLINE-02
+[2026-06-04 09:30:01] [INFO] [spems.edge.ingest] - Connecting to video stream source: rtsp://invalid-ip-mock:8554/live...
+[2026-06-04 09:30:01] [INFO] [spems.edge.ingest] - All camera ingestion streams started.
+[2026-06-04 09:30:01] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-01
+[2026-06-04 09:30:05] [INFO] [spems.edge.ingest] - Stream worker stopped for camera: CAM-GK-01
+[2026-06-04 09:30:08] [INFO] [spems.edge.ingest] - Stream worker stopped for camera: CAM-BD-OFFLINE-02
+[2026-06-04 09:30:08] [INFO] [spems.edge.ingest] - All camera ingestion streams stopped.
+[2026-06-04 09:30:08] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/violations "HTTP/1.1 201 Created"
+[2026-06-04 09:30:08] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations?status=PENDING "HTTP/1.1 200 OK"
+[2026-06-04 09:30:08] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/24 "HTTP/1.1 200 OK"
+[2026-06-04 09:30:08] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/24/verify "HTTP/1.1 200 OK"
+[2026-06-04 09:30:08] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/violations/24/action "HTTP/1.1 200 OK"
+[2026-06-04 09:30:08] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/24/history "HTTP/1.1 200 OK"
+[2026-06-04 09:30:08] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/audit-logs "HTTP/1.1 200 OK"
+[2026-06-04 09:30:08] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/24/pdf "HTTP/1.1 200 OK"
+[2026-06-04 09:30:08] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/violations/24/action "HTTP/1.1 200 OK"
+[2026-06-04 09:30:08] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/24/history "HTTP/1.1 200 OK"
+[2026-06-04 09:30:20] [WARNING] [spems.edge.ingest] - Connection failed for CAM-BD-OFFLINE-02. Retrying in 1.0s...
+[2026-06-04 09:30:20] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/compliance/environmental-risk-summary "HTTP/1.1 200 OK"
+[2026-06-04 09:30:20] [INFO] [spems.edge.ingest] - Registered camera CAM-GK-VALLEY-01 in stream manager.
+[2026-06-04 09:30:20] [INFO] [spems.edge.detector] - Loading YOLOv8 model weights from: yolov8n.pt
+[2026-06-04 09:30:20] [INFO] [spems.edge.ingest] - Stream worker started for camera: CAM-GK-VALLEY-01
+[2026-06-04 09:30:20] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_detector_feed.avi...
+[2026-06-04 09:30:20] [INFO] [spems.edge.ingest] - All camera ingestion streams started.
+[2026-06-04 09:30:20] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-VALLEY-01
+[2026-06-04 09:30:25] [INFO] [spems.edge.ingest] - Local video file reached EOF for camera: CAM-GK-VALLEY-01
+[2026-06-04 09:30:25] [INFO] [spems.edge.ingest] - Reconnecting camera CAM-GK-VALLEY-01 in 1.0s...
+[2026-06-04 09:30:26] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_detector_feed.avi...
+[2026-06-04 09:30:26] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-VALLEY-01
+[2026-06-04 09:30:29] [INFO] [spems.edge.ingest] - Stream worker stopped for camera: CAM-GK-VALLEY-01
+[2026-06-04 09:30:29] [INFO] [spems.edge.ingest] - All camera ingestion streams stopped.
+[2026-06-04 09:30:30] [INFO] [spems.edge.ingest] - Registered camera CAM-GK-01 in stream manager.
+[2026-06-04 09:30:30] [INFO] [spems.edge.ingest] - Stream worker started for camera: CAM-GK-01
+[2026-06-04 09:30:30] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_tracking_feed.avi...
+[2026-06-04 09:30:30] [INFO] [spems.edge.ingest] - All camera ingestion streams started.
+[2026-06-04 09:30:30] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-01
+[2026-06-04 09:30:34] [INFO] [spems.edge.ingest] - Local video file reached EOF for camera: CAM-GK-01
+[2026-06-04 09:30:34] [INFO] [spems.edge.ingest] - Reconnecting camera CAM-GK-01 in 1.0s...
+[2026-06-04 09:30:35] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_tracking_feed.avi...
+[2026-06-04 09:30:35] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-01
+[2026-06-04 09:30:35] [INFO] [spems.edge.ingest] - Stream worker stopped for camera: CAM-GK-01
+[2026-06-04 09:30:35] [INFO] [spems.edge.ingest] - All camera ingestion streams stopped.
+[2026-06-04 09:38:10] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-04 09:38:10] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-04 09:38:12] [WARNING] [easyocr.easyocr] - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+[2026-06-04 09:38:20] [INFO] [spems.edge.ingest] - Registered camera CAM-GK-ENTRY-01 in stream manager.
+[2026-06-04 09:38:20] [INFO] [spems.edge.ingest] - Stream worker started for camera: CAM-GK-ENTRY-01
+[2026-06-04 09:38:20] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_anpr_feed.avi...
+[2026-06-04 09:38:20] [INFO] [spems.edge.ingest] - All camera ingestion streams started.
+[2026-06-04 09:38:20] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-ENTRY-01
+[2026-06-04 09:38:24] [INFO] [spems.edge.ingest] - Local video file reached EOF for camera: CAM-GK-ENTRY-01
+[2026-06-04 09:38:24] [INFO] [spems.edge.ingest] - Reconnecting camera CAM-GK-ENTRY-01 in 1.0s...
+[2026-06-04 09:38:25] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_anpr_feed.avi...
+[2026-06-04 09:38:25] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-ENTRY-01
+[2026-06-04 09:38:28] [INFO] [spems.edge.ingest] - Local video file reached EOF for camera: CAM-GK-ENTRY-01
+[2026-06-04 09:38:28] [INFO] [spems.edge.ingest] - Reconnecting camera CAM-GK-ENTRY-01 in 1.0s...
+[2026-06-04 09:38:29] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_anpr_feed.avi...
+[2026-06-04 09:38:29] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-ENTRY-01
+[2026-06-04 09:38:29] [INFO] [spems.edge.ingest] - Stream worker stopped for camera: CAM-GK-ENTRY-01
+[2026-06-04 09:38:29] [INFO] [spems.edge.ingest] - All camera ingestion streams stopped.
+[2026-06-04 09:38:30] [INFO] [spems.edge.ingest] - Registered camera CAM-GK-01 in stream manager.
+[2026-06-04 09:38:30] [INFO] [spems.edge.ingest] - Registered camera CAM-BD-OFFLINE-02 in stream manager.
+[2026-06-04 09:38:30] [INFO] [spems.edge.ingest] - Stream worker started for camera: CAM-GK-01
+[2026-06-04 09:38:30] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_ingest_feed.avi...
+[2026-06-04 09:38:30] [INFO] [spems.edge.ingest] - Stream worker started for camera: CAM-BD-OFFLINE-02
+[2026-06-04 09:38:30] [INFO] [spems.edge.ingest] - Connecting to video stream source: rtsp://invalid-ip-mock:8554/live...
+[2026-06-04 09:38:30] [INFO] [spems.edge.ingest] - All camera ingestion streams started.
+[2026-06-04 09:38:30] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-01
+[2026-06-04 09:38:34] [INFO] [spems.edge.ingest] - Stream worker stopped for camera: CAM-GK-01
+[2026-06-04 09:38:37] [INFO] [spems.edge.ingest] - Stream worker stopped for camera: CAM-BD-OFFLINE-02
+[2026-06-04 09:38:37] [INFO] [spems.edge.ingest] - All camera ingestion streams stopped.
+[2026-06-04 09:38:37] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/violations "HTTP/1.1 201 Created"
+[2026-06-04 09:38:37] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations?status=PENDING "HTTP/1.1 200 OK"
+[2026-06-04 09:38:37] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/25 "HTTP/1.1 200 OK"
+[2026-06-04 09:38:37] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/25/verify "HTTP/1.1 200 OK"
+[2026-06-04 09:38:37] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/violations/25/action "HTTP/1.1 200 OK"
+[2026-06-04 09:38:37] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/25/history "HTTP/1.1 200 OK"
+[2026-06-04 09:38:37] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/audit-logs "HTTP/1.1 200 OK"
+[2026-06-04 09:38:37] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/25/pdf "HTTP/1.1 200 OK"
+[2026-06-04 09:38:37] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/violations/25/action "HTTP/1.1 200 OK"
+[2026-06-04 09:38:37] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/25/history "HTTP/1.1 200 OK"
+[2026-06-04 09:38:49] [WARNING] [spems.edge.ingest] - Connection failed for CAM-BD-OFFLINE-02. Retrying in 1.0s...
+[2026-06-04 09:38:49] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/compliance/environmental-risk-summary "HTTP/1.1 200 OK"
+[2026-06-04 09:38:50] [INFO] [spems.edge.ingest] - Registered camera CAM-GK-VALLEY-01 in stream manager.
+[2026-06-04 09:38:50] [INFO] [spems.edge.detector] - Loading YOLOv8 model weights from: yolov8n.pt
+[2026-06-04 09:38:50] [INFO] [spems.edge.ingest] - Stream worker started for camera: CAM-GK-VALLEY-01
+[2026-06-04 09:38:50] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_detector_feed.avi...
+[2026-06-04 09:38:50] [INFO] [spems.edge.ingest] - All camera ingestion streams started.
+[2026-06-04 09:38:50] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-VALLEY-01
+[2026-06-04 09:38:54] [INFO] [spems.edge.ingest] - Local video file reached EOF for camera: CAM-GK-VALLEY-01
+[2026-06-04 09:38:54] [INFO] [spems.edge.ingest] - Reconnecting camera CAM-GK-VALLEY-01 in 1.0s...
+[2026-06-04 09:38:55] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_detector_feed.avi...
+[2026-06-04 09:38:55] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-VALLEY-01
+[2026-06-04 09:38:58] [INFO] [spems.edge.ingest] - Stream worker stopped for camera: CAM-GK-VALLEY-01
+[2026-06-04 09:38:58] [INFO] [spems.edge.ingest] - All camera ingestion streams stopped.
+[2026-06-04 09:38:58] [INFO] [spems.edge.ingest] - Registered camera CAM-GK-01 in stream manager.
+[2026-06-04 09:38:58] [INFO] [spems.edge.ingest] - Stream worker started for camera: CAM-GK-01
+[2026-06-04 09:38:58] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_tracking_feed.avi...
+[2026-06-04 09:38:58] [INFO] [spems.edge.ingest] - All camera ingestion streams started.
+[2026-06-04 09:38:58] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-01
+[2026-06-04 09:39:03] [INFO] [spems.edge.ingest] - Local video file reached EOF for camera: CAM-GK-01
+[2026-06-04 09:39:03] [INFO] [spems.edge.ingest] - Reconnecting camera CAM-GK-01 in 1.0s...
+[2026-06-04 09:39:04] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_tracking_feed.avi...
+[2026-06-04 09:39:04] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-01
+[2026-06-04 09:39:05] [INFO] [spems.edge.ingest] - Stream worker stopped for camera: CAM-GK-01
+[2026-06-04 09:39:05] [INFO] [spems.edge.ingest] - All camera ingestion streams stopped.

@@ -6,8 +6,8 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.future import select
 
 from ....db.session import get_async_db
-from ....db.models import Violation, Vehicle
-from ....schemas.types import ViolationOut
+from ....db.models import Violation, Vehicle, AuditLog
+from ....schemas.types import ViolationOut, ViolationReviewAction, AuditLogOut
 
 router = APIRouter()
 
@@ -238,3 +238,133 @@ async def verify_evidence_integrity(violation_id: int, db: AsyncSession = Depend
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail=f"Integrity check execution error: {e}"
         )
+
+@router.get("/audit-logs", response_model=list[AuditLogOut])
+async def list_audit_logs(
+    limit: int = 100,
+    db: AsyncSession = Depends(get_async_db)
+):
+    """
+    Retrieves system-wide audit logs, sorted chronologically.
+    Tracks officer actions and environmental compliance reviews.
+    """
+    query = select(AuditLog).order_by(AuditLog.created_at.desc()).limit(limit)
+    result = await db.execute(query)
+    records = result.scalars().all()
+    return records
+
+@router.get("/{violation_id}", response_model=ViolationOut)
+async def get_violation_detail(
+    violation_id: int,
+    db: AsyncSession = Depends(get_async_db)
+):
+    """
+    Fetches a single violation record by ID for detailed case review.
+    """
+    query = select(Violation).where(Violation.id == violation_id)
+    result = await db.execute(query)
+    violation = result.scalars().first()
+    if not violation:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="Violation record not found."
+        )
+    return violation
+
+@router.post("/{violation_id}/action", response_model=ViolationOut)
+async def take_case_action(
+    violation_id: int,
+    action_payload: ViolationReviewAction,
+    db: AsyncSession = Depends(get_async_db)
+):
+    """
+    Approve or dismiss a violation case.
+    Generates a unique challan reference on approval and restores compliance scores on dismissal.
+    Logs actions in the audit log for complete accountability.
+    """
+    query = select(Violation).where(Violation.id == violation_id)
+    result = await db.execute(query)
+    violation = result.scalars().first()
+    if not violation:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="Violation record not found."
+        )
+
+    action_upper = action_payload.action.upper()
+    if action_upper not in ["APPROVE", "DISMISS", "REJECT"]:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="Invalid action. Use 'APPROVE' or 'DISMISS' (or 'REJECT')."
+        )
+
+    old_status = violation.status
+
+    if action_upper == "APPROVE":
+        violation.status = "APPROVED"
+        if not violation.challan_reference:
+            # Generate a unique challan reference
+            violation.challan_reference = f"CH-{datetime.now(timezone.utc).strftime('%Y%m%d')}-{violation.id:04d}"
+        
+        # Write to audit logs
+        audit_rec = AuditLog(
+            action_type="CASE_APPROVED",
+            details=f"Violation ID {violation_id} approved. Officer Badge: {action_payload.officer_badge}. Notes: {action_payload.notes}",
+            ip_address="127.0.0.1"
+        )
+        db.add(audit_rec)
+        
+    elif action_upper in ["DISMISS", "REJECT"]:
+        violation.status = "DISMISSED"
+        
+        # Restore vehicle compliance score if it was previously deducted
+        if violation.plate_number and old_status not in ["DISMISSED"]:
+            query_veh = select(Vehicle).where(Vehicle.plate_number == violation.plate_number)
+            res_veh = await db.execute(query_veh)
+            vehicle = res_veh.scalars().first()
+            if vehicle:
+                deduction = 10
+                if violation.violation_type == "Littering":
+                    deduction = 15
+                elif violation.violation_type == "Restricted_Zone_Entry":
+                    deduction = 25
+                elif violation.violation_type == "River_Pollution":
+                    deduction = 35
+                vehicle.compliance_score = min(100, vehicle.compliance_score + deduction)
+                
+                # Recalculate risk rating
+                if vehicle.compliance_score > 75:
+                    vehicle.risk_rating = "Low"
+                elif vehicle.compliance_score > 45:
+                    vehicle.risk_rating = "Medium"
+                else:
+                    vehicle.risk_rating = "High"
+                db.add(vehicle)
+
+        # Write to audit logs
+        audit_rec = AuditLog(
+            action_type="CASE_DISMISSED",
+            details=f"Violation ID {violation_id} dismissed. Officer Badge: {action_payload.officer_badge}. Notes: {action_payload.notes}",
+            ip_address="127.0.0.1"
+        )
+        db.add(audit_rec)
+
+    violation.updated_at = datetime.now(timezone.utc)
+    db.add(violation)
+    await db.commit()
+    await db.refresh(violation)
+    return violation
+
+@router.get("/{violation_id}/history", response_model=list[AuditLogOut])
+async def get_case_history(
+    violation_id: int,
+    db: AsyncSession = Depends(get_async_db)
+):
+    """
+    Retrieves the audit log history for a specific case by searching log narratives.
+    """
+    query = select(AuditLog).where(AuditLog.details.like(f"%Violation ID {violation_id}%")).order_by(AuditLog.created_at.desc())
+    result = await db.execute(query)
+    records = result.scalars().all()
+    return records
+
