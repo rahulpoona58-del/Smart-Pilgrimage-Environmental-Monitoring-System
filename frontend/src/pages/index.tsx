@@ -29,6 +29,7 @@ const DashboardMap = dynamic(() => import('../components/DashboardMap'), {
 import ViolationsFeed, { ViolationRecord } from '../components/ViolationsFeed';
 import TelemetryCharts from '../components/TelemetryCharts';
 import EmissionsCalculator from '../components/EmissionsCalculator';
+import PredictionDashboard from '../components/PredictionDashboard';
 
 interface CameraRecord {
   id: string;
@@ -538,9 +539,10 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Violations center */}
-              <div>
+              {/* Violations center & Prediction Dashboard */}
+              <div className="grid-2-col" style={{ marginTop: '20px', alignItems: 'stretch' }}>
                 <ViolationsFeed violations={violations} onUpdateStatus={handleUpdateStatus} />
+                <PredictionDashboard />
               </div>
             </div>
 

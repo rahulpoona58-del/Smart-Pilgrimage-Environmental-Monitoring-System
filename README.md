@@ -108,4 +108,18 @@ python test_integrated_pipeline.py
   - `GET /api/v1/compliance/emissions/calculate`: Computes emissions and saves logs.
   - `GET /api/v1/compliance/emissions/history`: Retrieves past calculations.
 
+---
+
+## 6. AI Prediction Engine & Alerting
+
+- **Pollution Spike Forecasting**: Autoregressive models predict AQI trends for the next N hours, raising warnings if values exceed 85.0.
+- **Traffic Congestion Predictions**: Projects hourly transits to alert when traffic index reaches critical limits.
+- **Crowd Density Alerts**: Forecasts pedestrian overload spikes based on location volume trends and geofenced overcrowding events.
+- **Littering Hotspot Mapping**: Tracks spatial clustering to predict location violation frequencies.
+- **FastAPI Endpoints**:
+  - `POST /api/v1/prediction/train`: Fits linear autoregressive models over lag matrices and saves RMSE, MAE, and R2 validation metrics.
+  - `GET /api/v1/prediction/risk-forecast/{location_id}`: Compiles unified 24h risk forecast overlays.
+  - `GET /api/v1/prediction/{pollution/traffic/crowd/litter}/{location_id}`: Query routes for specific indicators.
+
+
 

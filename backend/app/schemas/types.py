@@ -125,3 +125,33 @@ class EmissionsHistoryOut(BaseModel):
     class Config:
         from_attributes = True
 
+class ModelTrainingMetricsOut(BaseModel):
+    id: int
+    model_name: str
+    trained_at: datetime
+    mae: float
+    rmse: float
+    r2: float
+    training_samples: int
+
+    class Config:
+        from_attributes = True
+
+class PredictionResult(BaseModel):
+    target_type: str
+    predicted_value: float
+    confidence_score: float
+    target_time: datetime
+    alert_generated: bool
+    alert_message: Optional[str] = None
+
+class EnvironmentalRiskForecast(BaseModel):
+    location_id: int
+    calculated_at: datetime
+    pollution_spike_prediction: PredictionResult
+    traffic_congestion_prediction: PredictionResult
+    crowd_density_prediction: PredictionResult
+    littering_hotspot_prediction: PredictionResult
+    overall_risk_rating: str
+
+

@@ -9,7 +9,7 @@ from typing import Optional
 from .db.session import get_async_db
 from .db.models import VehicleLog, SensorData, Vehicle
 from .schemas.types import SystemHealth, VehicleLogCreate, VehicleLogOut, TelemetryCreate, TelemetryOut
-from .api.v1.endpoints import violations, compliance, vehicles, cameras, reports
+from .api.v1.endpoints import violations, compliance, vehicles, cameras, reports, prediction
 from .core.logging_config import setup_system_logging
 
 # Start logging handlers
@@ -62,6 +62,7 @@ app.include_router(compliance.router, prefix="/api/v1/compliance", tags=["compli
 app.include_router(vehicles.router, prefix="/api/v1/vehicles", tags=["vehicles"])
 app.include_router(cameras.router, prefix="/api/v1/cameras", tags=["cameras"])
 app.include_router(reports.router, prefix="/api/v1", tags=["reports"])
+app.include_router(prediction.router, prefix="/api/v1/prediction", tags=["prediction"])
 
 @app.on_event("startup")
 async def startup_event():

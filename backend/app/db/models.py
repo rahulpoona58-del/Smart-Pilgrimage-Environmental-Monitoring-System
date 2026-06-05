@@ -211,3 +211,27 @@ class EmissionsHistory(Base):
     idle_savings_kg = Column(Numeric(12, 2), nullable=False)
     segment_data = Column(JSON, nullable=True) # Mapped details for segment breakdowns
 
+class ModelTrainingMetrics(Base):
+    __tablename__ = "model_training_metrics"
+
+    id = Column(Integer, primary_key=True)
+    model_name = Column(String(50), nullable=False) # 'pollution', 'traffic', 'crowd', 'litter'
+    trained_at = Column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc))
+    mae = Column(Numeric(8, 4), nullable=False)
+    rmse = Column(Numeric(8, 4), nullable=False)
+    r2 = Column(Numeric(8, 4), nullable=False)
+    training_samples = Column(Integer, nullable=False)
+
+class PredictionHistory(Base):
+    __tablename__ = "prediction_history"
+
+    id = Column(Integer, primary_key=True)
+    target_type = Column(String(50), nullable=False) # 'pollution', 'traffic', 'crowd', 'litter'
+    location_id = Column(Integer, ForeignKey("locations.id", ondelete="CASCADE"), nullable=False)
+    predicted_value = Column(Numeric(12, 4), nullable=False)
+    confidence_score = Column(Numeric(5, 2), nullable=False)
+    predicted_at = Column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc))
+    target_time = Column(DateTime(timezone=True), nullable=False)
+    features_used = Column(JSON, nullable=True)
+
+

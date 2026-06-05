@@ -9,7 +9,7 @@ import threading
 
 def print_banner():
     print("==================================================")
-    print("      🕉️  SPEMS - LOCAL MVP ORCHESTRATOR  🕉️      ")
+    print("        SPEMS - LOCAL MVP ORCHESTRATOR            ")
     print("==================================================")
     print("Starting all integrated open-source AI microservices...")
     print("Press Ctrl+C to shutdown all running modules cleanly.")
