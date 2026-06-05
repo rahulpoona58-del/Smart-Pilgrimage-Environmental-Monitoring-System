@@ -71,6 +71,7 @@ class Location(Base):
     cameras = relationship("Camera", back_populates="location")
     telemetry = relationship("SensorData", back_populates="location")
     violations = relationship("Violation", back_populates="location")
+    disaster_alerts = relationship("DisasterAlert", back_populates="location")
 
 class Camera(Base):
     __tablename__ = "cameras"
@@ -233,5 +234,21 @@ class PredictionHistory(Base):
     predicted_at = Column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc))
     target_time = Column(DateTime(timezone=True), nullable=False)
     features_used = Column(JSON, nullable=True)
+
+class DisasterAlert(Base):
+    __tablename__ = "disaster_alerts"
+
+    id = Column(Integer, primary_key=True, index=True)
+    location_id = Column(Integer, ForeignKey("locations.id", ondelete="CASCADE"), nullable=False, index=True)
+    hazard_type = Column(String(50), nullable=False) # 'Landslide', 'Flood', 'Rockfall'
+    severity_level = Column(String(20), nullable=False) # 'Low', 'Medium', 'High', 'Critical'
+    trigger_source = Column(String(100), nullable=False) # 'Optical Flow', 'Telemetry Threshold'
+    description = Column(Text)
+    sensor_readings = Column(JSON, nullable=True)
+    is_active = Column(Boolean, default=True)
+    resolved_at = Column(DateTime(timezone=True), nullable=True)
+    created_at = Column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc))
+
+    location = relationship("Location", back_populates="disaster_alerts")
 
 

@@ -9,7 +9,7 @@ from typing import Optional
 from .db.session import get_async_db
 from .db.models import VehicleLog, SensorData, Vehicle
 from .schemas.types import SystemHealth, VehicleLogCreate, VehicleLogOut, TelemetryCreate, TelemetryOut
-from .api.v1.endpoints import violations, compliance, vehicles, cameras, reports, prediction
+from .api.v1.endpoints import violations, compliance, vehicles, cameras, reports, prediction, disaster
 from .core.logging_config import setup_system_logging
 
 # Start logging handlers
@@ -63,6 +63,7 @@ app.include_router(vehicles.router, prefix="/api/v1/vehicles", tags=["vehicles"]
 app.include_router(cameras.router, prefix="/api/v1/cameras", tags=["cameras"])
 app.include_router(reports.router, prefix="/api/v1", tags=["reports"])
 app.include_router(prediction.router, prefix="/api/v1/prediction", tags=["prediction"])
+app.include_router(disaster.router, prefix="/api/v1/disaster", tags=["disaster"])
 
 @app.on_event("startup")
 async def startup_event():
@@ -186,6 +187,12 @@ async def create_vehicle_transit_log(payload: VehicleLogCreate, db: AsyncSession
         raw_confidence=payload.raw_confidence
     )
 
+    from .db.models import is_sqlite
+    if is_sqlite:
+        result = await db.execute(select(VehicleLog.id).order_by(VehicleLog.id.desc()).limit(1))
+        max_id = result.scalar() or 0
+        new_log.id = max_id + 1
+
     db.add(new_log)
     await db.commit()
     await db.refresh(new_log)
@@ -210,6 +217,12 @@ async def log_iot_sensor_telemetry(payload: TelemetryCreate, db: AsyncSession = 
         water_ph=payload.water_ph,
         measured_at=payload.measured_at
     )
+
+    from .db.models import is_sqlite
+    if is_sqlite:
+        result = await db.execute(select(SensorData.id).order_by(SensorData.id.desc()).limit(1))
+        max_id = result.scalar() or 0
+        new_telemetry.id = max_id + 1
 
     db.add(new_telemetry)
     await db.commit()

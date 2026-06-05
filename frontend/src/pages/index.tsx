@@ -30,6 +30,7 @@ import ViolationsFeed, { ViolationRecord } from '../components/ViolationsFeed';
 import TelemetryCharts from '../components/TelemetryCharts';
 import EmissionsCalculator from '../components/EmissionsCalculator';
 import PredictionDashboard from '../components/PredictionDashboard';
+import DisasterDashboard from '../components/DisasterDashboard';
 
 interface CameraRecord {
   id: string;
@@ -539,10 +540,12 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Violations center & Prediction Dashboard */}
               <div className="grid-2-col" style={{ marginTop: '20px', alignItems: 'stretch' }}>
                 <ViolationsFeed violations={violations} onUpdateStatus={handleUpdateStatus} />
-                <PredictionDashboard />
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                  <PredictionDashboard />
+                  <DisasterDashboard />
+                </div>
               </div>
             </div>
 

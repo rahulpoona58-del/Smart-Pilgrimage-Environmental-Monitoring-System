@@ -8943,3 +8943,848 @@ FROM emissions_history ORDER BY emissions_history.calculated_at DESC
 
   File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
     POST /api/v1/telemetry
+[2026-06-05 10:22:53] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:52:51.129497+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:22:55] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:52:53.183288+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:22:57] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:52:55.212723+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:23:04] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:53:02.251644+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:23:06] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:53:04.334324+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:23:08] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:53:06.406500+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:23:15] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:53:13.440673+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:23:17] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:53:15.474534+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:23:19] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:53:17.537107+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:23:26] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:53:24.576917+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:23:28] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:53:26.639482+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:23:30] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:53:28.682346+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:23:37] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:53:35.735038+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:23:39] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:53:37.760379+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:23:41] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:53:39.809068+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:23:48] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:53:46.880345+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:23:50] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:53:48.940003+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:23:53] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:53:50.997108+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:24:00] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:53:58.052972+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:24:02] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:54:00.133297+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:24:03] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-05 10:24:03] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-05 10:24:04] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:54:02.179059+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:24:05] [WARNING] [easyocr.easyocr] - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+[2026-06-05 10:24:11] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:54:09.234216+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:24:11] [INFO] [spems.edge.ingest] - Registered camera CAM-GK-ENTRY-01 in stream manager.
+[2026-06-05 10:24:11] [INFO] [spems.edge.ingest] - Stream worker started for camera: CAM-GK-ENTRY-01
+[2026-06-05 10:24:11] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_anpr_feed.avi...
+[2026-06-05 10:24:11] [INFO] [spems.edge.ingest] - All camera ingestion streams started.
+[2026-06-05 10:24:11] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-ENTRY-01
+[2026-06-05 10:24:13] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'timestamp'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:54:13.276036+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 159, in create_vehicle_transit_log
+    POST /api/v1/logs/vehicle
+[2026-06-05 10:24:13] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:54:11.316528+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:24:14] [INFO] [spems.edge.ingest] - Local video file reached EOF for camera: CAM-GK-ENTRY-01
+[2026-06-05 10:24:14] [INFO] [spems.edge.ingest] - Reconnecting camera CAM-GK-ENTRY-01 in 1.0s...
+[2026-06-05 10:24:15] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:54:13.363586+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:24:15] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_anpr_feed.avi...
+[2026-06-05 10:24:15] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-ENTRY-01
+[2026-06-05 10:24:16] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'timestamp'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:54:16.149121+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 159, in create_vehicle_transit_log
+    POST /api/v1/logs/vehicle
+[2026-06-05 10:24:19] [INFO] [spems.edge.ingest] - Local video file reached EOF for camera: CAM-GK-ENTRY-01
+[2026-06-05 10:24:19] [INFO] [spems.edge.ingest] - Reconnecting camera CAM-GK-ENTRY-01 in 1.0s...
+[2026-06-05 10:24:19] [INFO] [spems.edge.ingest] - Stream worker stopped for camera: CAM-GK-ENTRY-01
+[2026-06-05 10:24:19] [INFO] [spems.edge.ingest] - All camera ingestion streams stopped.
+[2026-06-05 10:24:20] [INFO] [spems.edge.ingest] - Registered camera CAM-GK-01 in stream manager.
+[2026-06-05 10:24:20] [INFO] [spems.edge.ingest] - Registered camera CAM-BD-OFFLINE-02 in stream manager.
+[2026-06-05 10:24:20] [INFO] [spems.edge.ingest] - Stream worker started for camera: CAM-GK-01
+[2026-06-05 10:24:20] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_ingest_feed.avi...
+[2026-06-05 10:24:20] [INFO] [spems.edge.ingest] - Stream worker started for camera: CAM-BD-OFFLINE-02
+[2026-06-05 10:24:20] [INFO] [spems.edge.ingest] - Connecting to video stream source: rtsp://invalid-ip-mock:8554/live...
+[2026-06-05 10:24:20] [INFO] [spems.edge.ingest] - All camera ingestion streams started.
+[2026-06-05 10:24:20] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-01
+[2026-06-05 10:24:22] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:54:20.401239+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:24:24] [INFO] [spems.edge.ingest] - Stream worker stopped for camera: CAM-GK-01
+[2026-06-05 10:24:24] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:54:22.458197+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:24:26] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:54:24.548300+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:24:27] [INFO] [spems.edge.ingest] - Stream worker stopped for camera: CAM-BD-OFFLINE-02
+[2026-06-05 10:24:27] [INFO] [spems.edge.ingest] - All camera ingestion streams stopped.
+[2026-06-05 10:24:27] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/violations "HTTP/1.1 201 Created"
+[2026-06-05 10:24:27] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations?status=PENDING "HTTP/1.1 200 OK"
+[2026-06-05 10:24:27] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/27 "HTTP/1.1 200 OK"
+[2026-06-05 10:24:27] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/27/verify "HTTP/1.1 200 OK"
+[2026-06-05 10:24:27] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/violations/27/action "HTTP/1.1 200 OK"
+[2026-06-05 10:24:27] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/27/history "HTTP/1.1 200 OK"
+[2026-06-05 10:24:27] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/audit-logs "HTTP/1.1 200 OK"
+[2026-06-05 10:24:27] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/27/pdf "HTTP/1.1 200 OK"
+[2026-06-05 10:24:27] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/violations/27/action "HTTP/1.1 200 OK"
+[2026-06-05 10:24:27] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/27/history "HTTP/1.1 200 OK"
+[2026-06-05 10:24:27] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/compliance/emissions/calculate?save_to_history=true "HTTP/1.1 200 OK"
+[2026-06-05 10:24:27] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/compliance/emissions/history?limit=10 "HTTP/1.1 200 OK"
+[2026-06-05 10:24:32] [ERROR] [spems.db] - Database session exception: 400: Duplicate evidence detected. This environmental infraction has already been logged.
+[2026-06-05 10:24:32] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/prediction/train "HTTP/1.1 200 OK"
+[2026-06-05 10:24:32] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/prediction/risk-forecast/1 "HTTP/1.1 200 OK"
+[2026-06-05 10:24:32] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/prediction/pollution/1?hours_ahead=6 "HTTP/1.1 200 OK"
+[2026-06-05 10:24:33] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:54:31.595123+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:24:35] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:54:33.661440+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:24:36] [ERROR] [spems.db] - Database session exception: 400: Vehicle plate number already registered.
+[2026-06-05 10:24:37] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:54:35.699327+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:24:38] [ERROR] [spems.db] - Database session exception: (sqlite3.IntegrityError) NOT NULL constraint failed: vehicle_logs.id
+[SQL: INSERT INTO vehicle_logs (plate_number, camera_id, location_id, log_type, timestamp, raw_confidence, created_at) VALUES (?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('UK07TA9999', 'CAM-GK-GATE-01', 1, 'ENTRY', '2026-06-05 01:54:36.404577', 0.95, '2026-06-05 04:54:38.523989')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+[2026-06-05 10:24:39] [WARNING] [spems.edge.ingest] - Connection failed for CAM-BD-OFFLINE-02. Retrying in 1.0s...
+[2026-06-05 10:24:41] [ERROR] [spems.db] - Database session exception: (sqlite3.IntegrityError) NOT NULL constraint failed: vehicle_logs.id
+[SQL: INSERT INTO vehicle_logs (plate_number, camera_id, location_id, log_type, timestamp, raw_confidence, created_at) VALUES (?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('UK07TA9999', 'CAM-GK-EXIT-02', 1, 'EXIT', '2026-06-05 02:54:36.404606', 0.92, '2026-06-05 04:54:41.004157')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+[2026-06-05 10:24:43] [ERROR] [spems.db] - Database session exception: (sqlite3.IntegrityError) NOT NULL constraint failed: vehicle_logs.id
+[SQL: INSERT INTO vehicle_logs (plate_number, camera_id, location_id, log_type, timestamp, raw_confidence, created_at) VALUES (?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('UK07TA9999', 'CAM-BD-GATE-01', 2, 'ENTRY', '2026-06-05 04:24:36.404635', 0.88, '2026-06-05 04:54:43.101040')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+[2026-06-05 10:24:44] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:54:42.750825+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:24:46] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:54:44.812970+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:24:48] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:54:46.880433+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:24:56] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:54:53.949743+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:24:57] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/compliance/environmental-risk-summary "HTTP/1.1 200 OK"
+[2026-06-05 10:24:57] [INFO] [spems.edge.ingest] - Registered camera CAM-GK-VALLEY-01 in stream manager.
+[2026-06-05 10:24:57] [INFO] [spems.edge.detector] - Loading YOLOv8 model weights from: yolov8n.pt
+[2026-06-05 10:24:58] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:54:56.017811+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:24:58] [INFO] [spems.edge.ingest] - Stream worker started for camera: CAM-GK-VALLEY-01
+[2026-06-05 10:24:58] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_detector_feed.avi...
+[2026-06-05 10:24:58] [INFO] [spems.edge.ingest] - All camera ingestion streams started.
+[2026-06-05 10:24:58] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-VALLEY-01
+[2026-06-05 10:25:00] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:54:58.088900+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:25:02] [INFO] [spems.edge.ingest] - Local video file reached EOF for camera: CAM-GK-VALLEY-01
+[2026-06-05 10:25:02] [INFO] [spems.edge.ingest] - Reconnecting camera CAM-GK-VALLEY-01 in 1.0s...
+[2026-06-05 10:25:03] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_detector_feed.avi...
+[2026-06-05 10:25:03] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-VALLEY-01
+[2026-06-05 10:25:06] [INFO] [spems.edge.ingest] - Stream worker stopped for camera: CAM-GK-VALLEY-01
+[2026-06-05 10:25:06] [INFO] [spems.edge.ingest] - All camera ingestion streams stopped.
+[2026-06-05 10:25:06] [INFO] [spems.edge.ingest] - Registered camera CAM-GK-01 in stream manager.
+[2026-06-05 10:25:06] [INFO] [spems.edge.ingest] - Stream worker started for camera: CAM-GK-01
+[2026-06-05 10:25:06] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_tracking_feed.avi...
+[2026-06-05 10:25:06] [INFO] [spems.edge.ingest] - All camera ingestion streams started.
+[2026-06-05 10:25:06] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-01
+[2026-06-05 10:25:07] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:55:05.131925+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:25:09] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:55:07.171162+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:25:11] [INFO] [spems.edge.ingest] - Local video file reached EOF for camera: CAM-GK-01
+[2026-06-05 10:25:11] [INFO] [spems.edge.ingest] - Reconnecting camera CAM-GK-01 in 1.0s...
+[2026-06-05 10:25:11] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:55:09.219214+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:25:12] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_tracking_feed.avi...
+[2026-06-05 10:25:12] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-01
+[2026-06-05 10:25:16] [INFO] [spems.edge.ingest] - Local video file reached EOF for camera: CAM-GK-01
+[2026-06-05 10:25:16] [INFO] [spems.edge.ingest] - Reconnecting camera CAM-GK-01 in 1.0s...
+[2026-06-05 10:25:17] [INFO] [spems.edge.ingest] - Stream worker stopped for camera: CAM-GK-01
+[2026-06-05 10:25:17] [INFO] [spems.edge.ingest] - All camera ingestion streams stopped.
+[2026-06-05 10:25:18] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:55:16.270147+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:25:20] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:55:18.340348+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:25:21] [ERROR] [spems.db] - Database session exception: 400: Camera ID already registered.
+[2026-06-05 10:25:22] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:55:20.393121+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:25:23] [ERROR] [spems.db] - Database session exception: 400: Vehicle plate number already registered.
+[2026-06-05 10:25:29] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:55:27.482660+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:25:31] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:55:29.547356+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:25:33] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:55:31.600978+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:25:40] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:55:38.654134+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:25:42] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:55:40.696797+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:25:44] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:55:42.765748+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:25:51] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:55:49.811576+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:25:53] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:55:51.876658+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:25:55] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:55:53.931996+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:26:03] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:56:00.972365+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:26:05] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:56:03.028375+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:26:07] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:56:05.084910+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:26:14] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:56:12.142812+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:26:16] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:56:14.200824+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:26:18] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:56:16.251251+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:26:25] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:56:23.315310+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:26:27] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:56:25.379430+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:26:29] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:56:27.423862+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:26:31] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-05 10:26:31] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-05 10:26:31] [ERROR] [spems.db] - Database session exception: (sqlite3.IntegrityError) NOT NULL constraint failed: sensor_data.id
+[SQL: INSERT INTO sensor_data (location_id, device_id, pm25, pm10, aqi, temperature, humidity, co2, water_ph, measured_at, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: (1, 'TEST-G-01', 10.0, 15.0, 35, 12.0, 97.0, 450.0, 4.5, '2026-06-05 04:56:31.209606', '2026-06-05 04:56:31.215580')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+[2026-06-05 10:26:36] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:56:34.466018+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:26:38] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:56:36.536499+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:26:40] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:56:38.591396+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:26:47] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:56:45.659249+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:26:49] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:56:47.706717+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:26:51] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:56:49.743156+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:26:58] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:56:56.789037+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:27:00] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:56:58.853275+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:27:02] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:57:00.886561+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:27:10] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:57:07.952142+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:27:12] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:57:10.015147+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:27:14] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:57:12.086095+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:27:21] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:57:19.150600+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:27:23] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:57:21.221245+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:27:25] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:57:23.287648+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:27:32] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:57:30.339514+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:27:34] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:57:32.403262+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:27:35] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-05 10:27:35] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-05 10:27:35] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/telemetry "HTTP/1.1 201 Created"
+[2026-06-05 10:27:35] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/disaster/status/1 "HTTP/1.1 200 OK"
+[2026-06-05 10:27:35] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/disaster/alerts "HTTP/1.1 200 OK"
+[2026-06-05 10:27:35] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/disaster/alerts/1/resolve "HTTP/1.1 200 OK"
+[2026-06-05 10:27:35] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/disaster/evaluate/1?camera_id=CAM-GK-RIVER-04 "HTTP/1.1 200 OK"
+[2026-06-05 10:27:36] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:57:34.466972+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:27:43] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:57:41.506320+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:27:45] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:57:43.570460+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:27:47] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:57:45.655797+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:27:54] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-05 10:27:54] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-05 10:27:54] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/telemetry "HTTP/1.1 201 Created"
+[2026-06-05 10:27:54] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/disaster/status/1 "HTTP/1.1 200 OK"
+[2026-06-05 10:27:54] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/disaster/alerts "HTTP/1.1 200 OK"
+[2026-06-05 10:27:54] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/disaster/alerts/2/resolve "HTTP/1.1 200 OK"
+[2026-06-05 10:27:54] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/disaster/evaluate/1?camera_id=CAM-GK-RIVER-04 "HTTP/1.1 200 OK"
+[2026-06-05 10:27:54] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:57:52.703539+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:27:56] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:57:54.769178+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:27:58] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:57:56.833957+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:28:05] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:58:03.907875+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:28:08] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:58:05.953396+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:28:10] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:58:08.007221+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:28:10] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-05 10:28:10] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-05 10:28:10] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/telemetry "HTTP/1.1 201 Created"
+[2026-06-05 10:28:10] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/disaster/status/1 "HTTP/1.1 200 OK"
+[2026-06-05 10:28:10] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/disaster/alerts "HTTP/1.1 200 OK"
+[2026-06-05 10:28:10] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/disaster/alerts/3/resolve "HTTP/1.1 200 OK"
+[2026-06-05 10:28:10] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/disaster/evaluate/1?camera_id=CAM-GK-RIVER-04 "HTTP/1.1 200 OK"
+[2026-06-05 10:28:17] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:58:15.063752+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:28:19] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:58:17.117221+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:28:21] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:58:19.159184+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:28:26] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-05 10:28:26] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-05 10:28:26] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/telemetry "HTTP/1.1 201 Created"
+[2026-06-05 10:28:26] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/disaster/status/1 "HTTP/1.1 200 OK"
+[2026-06-05 10:28:26] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/disaster/alerts "HTTP/1.1 200 OK"
+[2026-06-05 10:28:26] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/disaster/alerts/4/resolve "HTTP/1.1 200 OK"
+[2026-06-05 10:28:26] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/disaster/evaluate/1?camera_id=CAM-GK-RIVER-04 "HTTP/1.1 200 OK"
+[2026-06-05 10:28:28] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:58:26.214729+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:28:30] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:58:28.306494+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:28:32] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:58:30.369721+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:28:39] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:58:37.469760+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:28:41] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:58:39.561057+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:28:43] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:58:41.624759+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:28:48] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-05 10:28:48] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-05 10:28:48] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/telemetry "HTTP/1.1 201 Created"
+[2026-06-05 10:28:48] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/disaster/status/1 "HTTP/1.1 200 OK"
+[2026-06-05 10:28:48] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/disaster/alerts "HTTP/1.1 200 OK"
+[2026-06-05 10:28:48] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/disaster/alerts/5/resolve "HTTP/1.1 200 OK"
+[2026-06-05 10:28:48] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/disaster/evaluate/1?camera_id=CAM-GK-RIVER-04 "HTTP/1.1 200 OK"
+[2026-06-05 10:28:50] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:58:48.677336+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:28:52] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:58:50.753426+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:28:54] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:58:52.807541+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:29:01] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:58:59.868493+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:29:03] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:59:01.909374+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:29:06] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:59:03.983405+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:29:13] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:59:11.037499+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:29:15] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:59:13.080952+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:29:17] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:59:15.136933+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:29:24] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:59:22.184522+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:29:26] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:59:24.226264+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:29:28] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:59:26.270907+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:29:34] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-05 10:29:34] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-05 10:29:34] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/telemetry "HTTP/1.1 201 Created"
+[2026-06-05 10:29:34] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/disaster/status/1 "HTTP/1.1 200 OK"
+[2026-06-05 10:29:34] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/disaster/alerts "HTTP/1.1 200 OK"
+[2026-06-05 10:29:34] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/disaster/alerts/6/resolve "HTTP/1.1 200 OK"
+[2026-06-05 10:29:34] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/disaster/evaluate/1?camera_id=CAM-GK-RIVER-04 "HTTP/1.1 200 OK"
+[2026-06-05 10:29:35] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:59:33.341375+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:29:37] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:59:35.426371+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:29:39] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:59:37.462334+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:29:46] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:59:44.519194+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:29:48] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:59:46.591952+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:29:50] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:59:48.656465+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:29:52] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-05 10:29:52] [INFO] [root] - SPEMS System Logging successfully initialized.
+[2026-06-05 10:29:54] [WARNING] [easyocr.easyocr] - Neither CUDA nor MPS are available - defaulting to CPU. Note: This module is much faster with a GPU.
+[2026-06-05 10:29:57] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:59:55.727026+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:29:59] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:59:57.783570+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:30:00] [INFO] [spems.edge.ingest] - Registered camera CAM-GK-ENTRY-01 in stream manager.
+[2026-06-05 10:30:00] [INFO] [spems.edge.ingest] - Stream worker started for camera: CAM-GK-ENTRY-01
+[2026-06-05 10:30:00] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_anpr_feed.avi...
+[2026-06-05 10:30:00] [INFO] [spems.edge.ingest] - All camera ingestion streams started.
+[2026-06-05 10:30:00] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-ENTRY-01
+[2026-06-05 10:30:01] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T04:59:59.813765+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:30:03] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'timestamp'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T05:00:03.010947+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 159, in create_vehicle_transit_log
+    POST /api/v1/logs/vehicle
+[2026-06-05 10:30:03] [INFO] [spems.edge.ingest] - Local video file reached EOF for camera: CAM-GK-ENTRY-01
+[2026-06-05 10:30:03] [INFO] [spems.edge.ingest] - Reconnecting camera CAM-GK-ENTRY-01 in 1.0s...
+[2026-06-05 10:30:04] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_anpr_feed.avi...
+[2026-06-05 10:30:04] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-ENTRY-01
+[2026-06-05 10:30:05] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'timestamp'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T05:00:05.101798+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 159, in create_vehicle_transit_log
+    POST /api/v1/logs/vehicle
+[2026-06-05 10:30:08] [INFO] [spems.edge.ingest] - Local video file reached EOF for camera: CAM-GK-ENTRY-01
+[2026-06-05 10:30:08] [INFO] [spems.edge.ingest] - Reconnecting camera CAM-GK-ENTRY-01 in 1.0s...
+[2026-06-05 10:30:08] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T05:00:06.837219+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:30:08] [INFO] [spems.edge.ingest] - Stream worker stopped for camera: CAM-GK-ENTRY-01
+[2026-06-05 10:30:08] [INFO] [spems.edge.ingest] - All camera ingestion streams stopped.
+[2026-06-05 10:30:09] [INFO] [spems.edge.ingest] - Registered camera CAM-GK-01 in stream manager.
+[2026-06-05 10:30:09] [INFO] [spems.edge.ingest] - Registered camera CAM-BD-OFFLINE-02 in stream manager.
+[2026-06-05 10:30:09] [INFO] [spems.edge.ingest] - Connecting to video stream source: temp_ingest_feed.avi...
+[2026-06-05 10:30:09] [INFO] [spems.edge.ingest] - Stream worker started for camera: CAM-GK-01
+[2026-06-05 10:30:09] [INFO] [spems.edge.ingest] - Stream worker started for camera: CAM-BD-OFFLINE-02
+[2026-06-05 10:30:09] [INFO] [spems.edge.ingest] - Connecting to video stream source: rtsp://invalid-ip-mock:8554/live...
+[2026-06-05 10:30:09] [INFO] [spems.edge.ingest] - All camera ingestion streams started.
+[2026-06-05 10:30:09] [INFO] [spems.edge.ingest] - Successfully connected to stream: CAM-GK-01
+[2026-06-05 10:30:10] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T05:00:08.891932+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:30:12] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T05:00:10.940489+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:30:13] [INFO] [spems.edge.ingest] - Stream worker stopped for camera: CAM-GK-01
+[2026-06-05 10:30:16] [INFO] [spems.edge.ingest] - Stream worker stopped for camera: CAM-BD-OFFLINE-02
+[2026-06-05 10:30:16] [INFO] [spems.edge.ingest] - All camera ingestion streams stopped.
+[2026-06-05 10:30:16] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/violations "HTTP/1.1 201 Created"
+[2026-06-05 10:30:16] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations?status=PENDING "HTTP/1.1 200 OK"
+[2026-06-05 10:30:16] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/29 "HTTP/1.1 200 OK"
+[2026-06-05 10:30:16] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/29/verify "HTTP/1.1 200 OK"
+[2026-06-05 10:30:16] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/violations/29/action "HTTP/1.1 200 OK"
+[2026-06-05 10:30:16] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/29/history "HTTP/1.1 200 OK"
+[2026-06-05 10:30:16] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/audit-logs "HTTP/1.1 200 OK"
+[2026-06-05 10:30:16] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/29/pdf "HTTP/1.1 200 OK"
+[2026-06-05 10:30:16] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/violations/29/action "HTTP/1.1 200 OK"
+[2026-06-05 10:30:16] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/violations/29/history "HTTP/1.1 200 OK"
+[2026-06-05 10:30:16] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/telemetry "HTTP/1.1 201 Created"
+[2026-06-05 10:30:16] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/disaster/status/1 "HTTP/1.1 200 OK"
+[2026-06-05 10:30:16] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/disaster/alerts "HTTP/1.1 200 OK"
+[2026-06-05 10:30:16] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/disaster/alerts/7/resolve "HTTP/1.1 200 OK"
+[2026-06-05 10:30:16] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/disaster/evaluate/1?camera_id=CAM-GK-RIVER-04 "HTTP/1.1 200 OK"
+[2026-06-05 10:30:16] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/compliance/emissions/calculate?save_to_history=true "HTTP/1.1 200 OK"
+[2026-06-05 10:30:16] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/compliance/emissions/history?limit=10 "HTTP/1.1 200 OK"
+[2026-06-05 10:30:20] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T05:00:17.993915+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:30:21] [ERROR] [spems.db] - Database session exception: 400: Duplicate evidence detected. This environmental infraction has already been logged.
+[2026-06-05 10:30:21] [INFO] [httpx] - HTTP Request: POST http://testserver/api/v1/prediction/train "HTTP/1.1 200 OK"
+[2026-06-05 10:30:21] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/prediction/risk-forecast/1 "HTTP/1.1 200 OK"
+[2026-06-05 10:30:21] [INFO] [httpx] - HTTP Request: GET http://testserver/api/v1/prediction/pollution/1?hours_ahead=6 "HTTP/1.1 200 OK"
+[2026-06-05 10:30:22] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T05:00:20.056741+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:30:24] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T05:00:22.112557+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:30:25] [ERROR] [spems.db] - Database session exception: 400: Vehicle plate number already registered.
+[2026-06-05 10:30:27] [ERROR] [spems.db] - Database session exception: (sqlite3.IntegrityError) NOT NULL constraint failed: vehicle_logs.id
+[SQL: INSERT INTO vehicle_logs (plate_number, camera_id, location_id, log_type, timestamp, raw_confidence, created_at) VALUES (?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('UK07TA9999', 'CAM-GK-GATE-01', 1, 'ENTRY', '2026-06-05 02:00:25.464832', 0.95, '2026-06-05 05:00:27.530730')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+[2026-06-05 10:30:28] [WARNING] [spems.edge.ingest] - Connection failed for CAM-BD-OFFLINE-02. Retrying in 1.0s...
+[2026-06-05 10:30:29] [ERROR] [spems.db] - Database session exception: (sqlite3.IntegrityError) NOT NULL constraint failed: vehicle_logs.id
+[SQL: INSERT INTO vehicle_logs (plate_number, camera_id, location_id, log_type, timestamp, raw_confidence, created_at) VALUES (?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('UK07TA9999', 'CAM-GK-EXIT-02', 1, 'EXIT', '2026-06-05 03:00:25.464854', 0.92, '2026-06-05 05:00:29.707939')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+[2026-06-05 10:30:31] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T05:00:29.176485+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:30:31] [ERROR] [spems.db] - Database session exception: (sqlite3.IntegrityError) NOT NULL constraint failed: vehicle_logs.id
+[SQL: INSERT INTO vehicle_logs (plate_number, camera_id, location_id, log_type, timestamp, raw_confidence, created_at) VALUES (?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('UK07TA9999', 'CAM-BD-GATE-01', 2, 'ENTRY', '2026-06-05 04:30:25.464861', 0.88, '2026-06-05 05:00:31.755597')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+[2026-06-05 10:30:33] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T05:00:31.223995+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry
+[2026-06-05 10:30:35] [ERROR] [spems.db] - Database session exception: 1 validation error:
+  {'type': 'datetime_from_date_parsing', 'loc': ('body', 'measured_at'), 'msg': 'Input should be a valid datetime or date, unexpected extra characters at the end of the input', 'input': '2026-06-05T05:00:33.294044+00:00Z', 'ctx': {'error': 'unexpected extra characters at the end of the input'}}
+
+  File "C:\Users\rahul\Desktop\VSCode_Projects\Smart Pilgrimage Environmental Monitoring System\backend\app\main.py", line 198, in log_iot_sensor_telemetry
+    POST /api/v1/telemetry

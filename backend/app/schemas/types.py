@@ -154,4 +154,27 @@ class EnvironmentalRiskForecast(BaseModel):
     littering_hotspot_prediction: PredictionResult
     overall_risk_rating: str
 
+class DisasterAlertOut(BaseModel):
+    id: int
+    location_id: int
+    hazard_type: str
+    severity_level: str
+    trigger_source: str
+    description: Optional[str] = None
+    sensor_readings: Optional[dict] = None
+    is_active: bool
+    resolved_at: Optional[datetime] = None
+    created_at: datetime
+
+    class Config:
+        from_attributes = True
+
+class DisasterStatus(BaseModel):
+    location_id: int
+    landslide_risk_score: float
+    flood_risk_score: float
+    rockfall_risk_score: float
+    overall_hazard_index: float
+    status: str # 'SAFE', 'WARNING', 'CRITICAL'
+
 

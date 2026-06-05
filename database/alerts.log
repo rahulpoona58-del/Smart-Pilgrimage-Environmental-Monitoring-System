@@ -26,3 +26,11 @@
   --> SMS SENT: SM1780421909x18
   --> EMAIL DELIVERED TO: ['inspectors@rto.uk.gov.in', 'dm-rudraprayag@uk.gov.in']
 
+[2026-06-05 04:54:51 UTC] ALERT #27 [Medium]: Surveillance Node flagged environmental violation: Category=Littering, Severity=Medium, Fine=INR 1000.00
+  --> SMS SENT: SM1780635291x27
+  --> EMAIL DELIVERED TO: ['inspectors@rto.uk.gov.in', 'dm-rudraprayag@uk.gov.in']
+
+[2026-06-05 05:00:40 UTC] ALERT #29 [Medium]: Surveillance Node flagged environmental violation: Category=Littering, Severity=Medium, Fine=INR 1000.00
+  --> SMS SENT: SM1780635640x29
+  --> EMAIL DELIVERED TO: ['inspectors@rto.uk.gov.in', 'dm-rudraprayag@uk.gov.in']
+
